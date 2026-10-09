@@ -1,0 +1,6 @@
+{
+  "name": "Studio Celia Figueredo - Reservas",
+  "description": "Sistema exclusivo de reserva de turnos para el atelier Studio Celia Figueredo en Recoleta, Buenos Aires.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

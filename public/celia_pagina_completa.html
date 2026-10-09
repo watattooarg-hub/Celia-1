@@ -1,0 +1,2174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celia Figueredo | Peluquería en Recoleta, Buenos Aires | Diseño Capilar</title>
+    <meta name="description" content="Celia Figueredo — atelier de diseño capilar en Recoleta, Buenos Aires. Corte, brushing, peinados, coloración, balayage, reflejos y tratamientos avanzados.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#050505">
+    <link rel="canonical" href="https://www.celiafigueredo.com/">
+    <link rel="icon" type="image/webp" href="imagenes/headL.webp">
+    <link rel="shortcut icon" href="imagenes/headL.webp" type="image/webp">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Celia Figueredo | Atelier de Diseño Capilar">
+    <meta property="og:description" content="Diseño capilar, color y tratamientos personalizados en Recoleta, Buenos Aires.">
+    <meta property="og:locale" content="es_AR">
+    
+    <!-- Fuentes: Cormorant Garamond (Fina) y Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --deep-black: #050505;
+            --gold: #D4AF37;
+            --ferrari-red: #FF2800;
+            --ivory: #F5F5F0;
+            --text-muted: #a0a0a0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--deep-black);
+            color: var(--ivory);
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, .serif { 
+            font-family: 'Cormorant Garamond', serif; 
+            font-weight: 300; 
+            text-transform: uppercase; 
+            letter-spacing: 4px; 
+        }
+
+        /* --- NAVEGACIÓN --- */
+        nav {
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(5, 5, 5, 0.95);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .logo-nav { color: var(--gold); text-decoration: none; font-size: 1.12rem; letter-spacing: 3px; white-space: nowrap; display:flex; align-items:center; gap:10px; min-width:0; }
+        .logo-nav img { width:34px; height:34px; object-fit:contain; display:block; flex:0 0 auto; }
+        .logo-nav span { display:block; overflow:hidden; text-overflow:ellipsis; }
+        .nav-links { display: flex; gap: 17px; align-items: center; flex-wrap: nowrap; }
+        .nav-item { color: white; text-decoration: none; font-size: 0.62rem; letter-spacing: 1.4px; white-space: nowrap; text-transform: uppercase; transition: 0.3s; }
+        .nav-item:hover { color: var(--gold); }
+
+        .btn-wa-nav { background: var(--gold); color: black; padding: 8px 14px; font-size: 0.62rem; letter-spacing: 1.2px; white-space: nowrap; font-weight: 600; text-decoration: none; }
+
+
+        .brand-lockup {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .brand-lockup img {
+            width: 42px;
+            height: 42px;
+            object-fit: contain;
+            display: block;
+            flex: 0 0 auto;
+        }
+        .hero-brand {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .hero-brand img {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            display: block;
+        }
+        .footer-brand { justify-content:center; align-items:center; width:100%; gap:15px; margin-left:auto; margin-right:auto; }
+        .footer-brand img {
+            width:200px;
+            height:200px;
+        }
+        @media (max-width: 600px) {
+            .brand-lockup { gap: 7px; }
+            .brand-lockup img { width: 34px; height: 34px; }
+            .hero-brand { gap: 10px; }
+            .hero-brand img { width: 300px; height: 300px; }
+        }
+
+        /* --- HERO --- */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('imagenes/hero-bg.webp');
+            background-size: cover;
+            background-position: center;
+            padding: 0 5%;
+        }
+
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 5rem); color: var(--gold); margin-bottom: 15px; }
+        .hero-kicker {
+            display: block;
+            text-align: center;
+            color: var(--gold) !important;
+            font-size: clamp(.72rem, 1.4vw, .95rem);
+            letter-spacing: clamp(2px, .45vw, 5px);
+            line-height: 1.4;
+            margin: 0 auto 18px !important;
+            padding-top: 34px;
+            width: 100%;
+        }
+        .hero-copy {
+            display: block;
+            width: min(900px, 92vw);
+            margin: 0 auto 35px !important;
+            text-align: center;
+            line-height: 1.55;
+        }
+        .hero p { font-family: 'Cormorant Garamond'; font-style: italic; font-size: 1.5rem; max-width: 800px; color: #eee; font-weight: 300; margin-bottom: 35px; }
+
+        /* --- CARRUSEL ESPEJOS --- */
+        .mirror-section { 
+            padding: 80px 0 0px; 
+            background: #080808; 
+            overflow: hidden; 
+        }
+        .mirror-track {
+            display:flex;
+            gap:30px;
+            padding:20px;
+            width:100%;
+            overflow-x:auto;
+            overflow-y:hidden;
+            scroll-behavior:auto;
+            scrollbar-width:none;
+            -ms-overflow-style:none;
+            cursor:grab;
+            touch-action:pan-y;
+            user-select:none;
+            -webkit-overflow-scrolling:touch;
+        }
+        .mirror-track::-webkit-scrollbar { display:none; }
+        .mirror-track.is-dragging { cursor:grabbing; scroll-behavior:auto; }
+        
+        .mirror-frame {
+            flex:0 0 clamp(250px, 28vw, 320px);
+            width:clamp(250px, 28vw, 320px);
+            height:clamp(350px, 40vw, 450px);
+            border: 8px solid #1a1a1a;
+            border-image: linear-gradient(to bottom, #D4AF37, #4a3a10) 1;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        .mirror-frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; }
+        .mirror-frame:hover img { transform: scale(1.1); }
+        
+        .mirror-label {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.7);
+            padding: 15px;
+            text-align: center;
+            font-family: 'Cormorant Garamond';
+            font-size: 1rem;
+            letter-spacing: 2px;
+            color: var(--gold);
+        }
+
+        /* --- REVELADO SUTIL AL HACER SCROLL --- */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translate3d(0, 34px, 0);
+            transition: opacity 0.9s ease, transform 0.9s cubic-bezier(.22,.61,.36,1);
+            will-change: opacity, transform;
+        }
+        .scroll-reveal.is-visible {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+        .mirror-frame.scroll-reveal {
+            transition-duration: 1s;
+        }
+
+        /* --- SERVICIOS --- */
+        .services-section { padding: 0 8% 100px; }
+        .category-header { text-align: center; margin: 60px 0 40px; }
+        .category-header h2 { font-size: 2.8rem; color: var(--gold); border-bottom: 1px solid rgba(212, 175, 55, 0.2); display: inline-block; padding-bottom: 10px; }
+        
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 35px; margin-bottom: 60px; }
+        
+        .service-link { text-decoration: none; display: block; }
+        .service-card { 
+            padding: 25px; 
+            border-left: 1px solid rgba(255, 40, 0, 0.2); 
+            background: rgba(255,255,255,0.01);
+            transition: 0.4s;
+            height: 100%;
+        }
+        .service-link:hover .service-card { border-left: 2px solid var(--ferrari-red); background: rgba(255,255,255,0.03); transform: translateY(-5px); }
+        
+        .service-card h4 { font-size: 1.4rem; color: white; margin-bottom: 5px; }
+        .service-card .tagline { font-family: 'Cormorant Garamond'; font-style: italic; color: var(--gold); display: block; margin-bottom: 15px; font-size: 1.1rem; }
+        .service-card p { color: var(--text-muted); font-size: 0.85rem; font-weight: 300; }
+
+
+        .service-card { padding: 0; overflow: hidden; border-left: 1px solid rgba(255, 40, 0, 0.2); background: rgba(255,255,255,0.015); transition: 0.4s; height: 100%; }
+        .service-card:hover { border-left: 2px solid var(--gold); background: rgba(255,255,255,0.035); transform: translateY(-6px); }
+         .service-card { cursor: pointer; }
+         .service-card:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
+        .service-media { height: 235px; overflow: hidden; background:#0b0b0b; }
+        .service-media img { width:100%; height:100%; object-fit:cover; display:block; transition: transform .8s ease, filter .8s ease; filter:saturate(.9) contrast(1.04); }
+        .service-card:hover .service-media img { transform:scale(1.055); filter:saturate(1.05) contrast(1.06); }
+        .service-copy { padding: 24px 25px 28px; }
+        .service-copy h4 { font-size: 1.32rem; color: white; margin-bottom: 5px; }
+        .service-copy .tagline { font-family:'Cormorant Garamond'; font-style:italic; color:var(--gold); display:block; margin-bottom:14px; font-size:1.05rem; }
+        .service-copy p { color:var(--text-muted); font-size:.84rem; font-weight:300; }
+        .questions-strip { padding:70px 8%; background:#080808; border-top:1px solid #111; border-bottom:1px solid #111; text-align:center; }
+        .questions-strip h2 { color:var(--gold); font-size:2.4rem; margin-bottom:10px; }
+        .questions-strip p { color:#999; max-width:720px; margin:0 auto 25px; font-weight:300; }
+        .questions-strip a { display:inline-block; color:#050505; background:var(--gold); padding:13px 24px; text-decoration:none; font-size:.65rem; letter-spacing:2px; font-weight:600; }
+        @media (max-width: 1180px) and (min-width: 993px) { .nav-links { gap:12px; } .nav-item { font-size:.57rem; letter-spacing:1px; } .logo-nav{font-size:1rem;letter-spacing:2px;} }
+
+        /* --- UBICACIÓN Y MAPA --- */
+
+        .reviews-section { padding: 100px 6%; background: #070707; border-top: 1px solid rgba(212,175,55,.10); border-bottom: 1px solid rgba(212,175,55,.10); }
+        .reviews-section .category-header { max-width: 900px; margin: 0 auto 42px; text-align: center; }
+        .reviews-section .section-kicker { color: var(--gold); letter-spacing: 4px; font-size: .68rem; margin-bottom: 10px; }
+        .reviews-section .section-intro { color: #8f8f8f; font-size: .9rem; max-width: 680px; margin: 10px auto 0; }
+        .reviews-shell { max-width: 1180px; margin: 0 auto; padding: 28px 28px 34px; background: #0b0b0b; border: 1px solid rgba(212,175,55,.18); box-shadow: 0 20px 60px rgba(0,0,0,.28); }
+        .reviews-heading { display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:22px; flex-wrap:wrap; }
+        .reviews-stars { color: var(--gold); letter-spacing: 4px; font-size: 1rem; }
+        .reviews-label { color:#777; font-size:.64rem; letter-spacing:3px; }
+        .reviews-shell .elfsight-app-c80e295e-eb83-4395-aea1-86d0627f4b73 { min-height: 240px; }
+
+        .map-section { padding: 100px 8%; background: #080808; }
+        .map-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        
+        .map-info h2 { font-size: 2.5rem; color: var(--gold); margin-bottom: 20px; }
+        .map-info p { font-size: 1.1rem; margin-bottom: 30px; font-weight: 200; }
+        
+        .map-canvas { height: 450px; border: 1px solid #222; filter: contrast(1.1) brightness(0.9); }
+
+        /* --- FOOTER --- */
+        footer { padding: 60px 8% 30px; border-top: 1px solid #111; text-align: center; }
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 28px;
+            width: 100%;
+            margin: 0 auto 28px;
+            text-align: left;
+        }
+        .footer-brand img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            flex: 0 0 auto;
+        }
+        .footer-brand-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .footer-logo {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+            display: block;
+            text-decoration: none;
+        }
+        .footer-faq {
+            margin-bottom: 18px;
+        }
+        .footer-faq a {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: .68rem;
+            letter-spacing: 2px;
+        }
+        .footer-socials { margin-bottom: 30px; }
+        .footer-socials a { color: white; margin: 0 15px; font-size: 1.2rem; transition: 0.3s; }
+        .footer-socials a:hover { color: var(--gold); }
+        .copy { font-size: 0.65rem; color: #444; letter-spacing: 2px; }
+
+        @media (max-width: 992px) {
+            .mirror-section { padding-top: 60px; }
+            .mirror-track { gap:18px; padding:16px 14px 24px; scroll-padding-inline:14px; }
+            .mirror-frame { flex-basis:min(78vw, 300px); width:min(78vw, 300px); height:min(112vw, 420px); }
+            .logo-nav { font-size:.92rem; letter-spacing:2px; gap:8px; }
+            .logo-nav img { width:34px; height:34px; }
+
+            .nav-links { display: none; }
+            .reviews-section { padding: 75px 5%; }
+            .reviews-shell { padding: 20px 12px 25px; }
+            .map-grid { grid-template-columns: 1fr; text-align: center; }
+            .map-canvas { height: 300px; }
+        }
+
+        @media (max-width: 600px) {
+            nav { padding:.75rem 4%; }
+            .logo-nav { font-size:.76rem; letter-spacing:1.5px; }
+            .logo-nav img { width:27px; height:27px; }
+            .mirror-track { gap:14px; padding:12px 12px 20px; }
+            .mirror-frame { flex-basis:82vw; width:82vw; height:112vw; max-height:390px; border-width:6px; }
+            .mirror-label { padding:12px 8px; font-size:.9rem; }
+        }
+    @media (max-width:420px){.hero-brand img{width:min(300px,62vw);height:min(300px,62vw)}.footer-brand img{width:min(200px,48vw);height:min(200px,48vw)}.footer-brand{flex-wrap:wrap}}
+
+        @media (max-width: 600px) {
+            .hero-kicker { padding-top: 44px !important; }
+            .hero-copy { width: 90vw; font-size: 1.25rem !important; }
+            .footer-brand { gap: 14px; align-items: center; }
+            .footer-brand img { width: min(200px, 42vw); height: min(200px, 42vw); }
+            .footer-logo { font-size: 1.45rem; letter-spacing: 2px; }
+            .footer-faq a { font-size: .58rem; letter-spacing: 1.4px; }
+            .copy { font-size: .52rem; letter-spacing: 1px; }
+        }
+
+    
+        /* Ocultar barra/drawer de Netlify feedback */
+        netlify-drawer,
+        #netlify-drawer,
+        [data-netlify-drawer],
+        div[data-netlify-drawer],
+        iframe#netlify-drawer {
+            display: none !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+            opacity: 0 !important;
+            height: 0 !important;
+            width: 0 !important;
+        }
+
+        /* Botón Flotante WhatsApp Oficial */
+        .btn-wa-flotante {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .btn-wa-flotante:hover {
+            transform: scale(1.1);
+            background-color: #20ba59;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            color: white;
+        }
+        .btn-wa-flotante svg {
+            width: 32px;
+            height: 32px;
+            fill: #ffffff;
+        }
+
+        /* Mapa sin filtro grisáceo */
+        .map-canvas {
+            filter: none !important;
+        }
+
+        /* Horarios de atención en ubicación */
+        .salon-hours-box {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #111;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            border-radius: 4px;
+            text-align: left;
+        }
+        .salon-hours-title {
+            color: var(--gold);
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .salon-hours-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.85rem;
+            color: #ccc;
+            line-height: 1.7;
+        }
+        .salon-hours-list .closed-day {
+            color: #ff6b6b;
+            font-weight: 500;
+        }
+        .salon-hours-list .open-day {
+            color: #7ce89f;
+        }
+
+    /* --- TABS BAR (Reservar Turno / Consultar o Modificar) --- */
+        .tabs-container {
+            max-width: 900px;
+            margin: -24px auto 40px;
+            padding: 0 4%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .tabs-pill {
+            background: #111;
+            border: 1px solid #2a2a2a;
+            border-radius: 50px;
+            padding: 5px;
+            display: inline-flex;
+            gap: 6px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: #999;
+            padding: 10px 22px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .tab-btn.active {
+            background: var(--ferrari-red);
+            color: white;
+            box-shadow: 0 0 18px rgba(214, 0, 28, 0.45);
+        }
+
+        /* --- CONTENEDOR PRINCIPAL --- */
+        .main-container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 4% 90px;
+        }
+
+        /* --- CARDS & FORM DESIGN --- */
+        .booking-card {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 8px;
+            padding: 35px;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.7);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .card-header {
+            margin-bottom: 28px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #1a1a1a;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .card-header-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #151109;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .card-header-text h2 {
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .card-header-text p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .form-section-title {
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin: 28px 0 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+        }
+
+        .form-section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        /* --- GRID SERVICIOS --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .service-option {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 6px;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-option:hover {
+            border-color: #444;
+            transform: translateY(-2px);
+        }
+
+        .service-option.selected {
+            border-color: var(--ferrari-red);
+            background: #1a0a0c;
+            box-shadow: 0 0 15px rgba(214, 0, 28, 0.25);
+        }
+
+        .service-option-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 6px;
+        }
+
+        .service-name {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+
+        .service-badge {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-weight: 700;
+            background: #251c09;
+            color: var(--gold);
+            border: 1px solid rgba(212,175,55,0.3);
+        }
+
+        .service-desc {
+            font-size: 0.76rem;
+            color: #888;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .service-meta {
+            font-size: 0.7rem;
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 500;
+        }
+
+        /* --- FECHA Y HORA CASCADA --- */
+        .datetime-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-label {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #bbb;
+            font-weight: 500;
+        }
+
+        .form-select, .form-input, .form-textarea {
+            background: #111;
+            border: 1px solid #2a2a2a;
+            color: #fff;
+            padding: 12px 14px;
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            transition: border-color 0.25s;
+            outline: none;
+            width: 100%;
+        }
+
+        .form-select:focus, .form-input:focus, .form-textarea:focus {
+            border-color: var(--gold);
+            background: #141414;
+        }
+
+        .form-select option {
+            background: #111;
+            color: #fff;
+        }
+
+        /* Mini aviso de horario y estado de fecha */
+        .date-status-box {
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #101010;
+            border: 1px solid #222;
+        }
+
+        .date-status-box.valid {
+            border-color: rgba(37, 211, 102, 0.35);
+            background: #08170c;
+            color: #8ce3a9;
+        }
+
+        .date-status-box.closed {
+            border-color: rgba(214, 0, 28, 0.4);
+            background: #1c0a0c;
+            color: #ff8a93;
+        }
+
+        .date-status-box.past {
+            border-color: rgba(212, 175, 55, 0.35);
+            background: #1c1709;
+            color: #f0d58a;
+        }
+
+        /* --- DATOS PERSONALES --- */
+        .client-inputs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        /* --- BOTÓN PRINCIPAL CONFIRMAR --- */
+        .btn-confirm-booking {
+            background: var(--ferrari-red);
+            color: white;
+            border: none;
+            padding: 16px 28px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(214, 0, 28, 0.4);
+            margin-top: 24px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btn-confirm-booking:hover {
+            background: #e60020;
+            box-shadow: 0 0 30px rgba(214, 0, 28, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .btn-confirm-booking:disabled {
+            background: #444;
+            cursor: not-allowed;
+            box-shadow: none;
+            transform: none;
+        }
+
+        /* --- MODAL / PANTALLA ÉXITO DE RESERVA --- */
+        .success-box {
+            display: none;
+            background: #0c180e;
+            border: 1px solid rgba(37, 211, 102, 0.4);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 25px;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .success-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(37, 211, 102, 0.15);
+            color: var(--wa-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 16px;
+        }
+
+        .booking-code-pill {
+            background: #000;
+            border: 1px dashed var(--gold);
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            font-family: monospace;
+            color: var(--gold);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 12px 0;
+            cursor: pointer;
+        }
+
+        .success-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .btn-wa-action {
+            background: var(--wa-green);
+            color: white;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-wa-action:hover {
+            background: #20ba59;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary-action {
+            background: #1a1a1a;
+            color: #ddd;
+            border: 1px solid #333;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-secondary-action:hover {
+            background: #252525;
+            color: #fff;
+        }
+
+        /* --- SECCIÓN CONSULTAR / MODIFICAR --- */
+        .search-results-area {
+            margin-top: 25px;
+        }
+
+        .appointment-card-item {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 8px;
+            padding: 22px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .appointment-card-item:hover {
+            border-color: #383838;
+        }
+
+        .appointment-card-item.status-active {
+            border-left: 4px solid var(--wa-green);
+        }
+
+        .appointment-card-item.status-cancelled {
+            border-left: 4px solid #888;
+            opacity: 0.75;
+        }
+
+        .appointment-card-item.status-rescheduled {
+            border-left: 4px solid var(--gold);
+        }
+
+        .appt-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .appt-title {
+            font-size: 1.1rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .appt-code {
+            font-family: monospace;
+            background: #1c1c1c;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: var(--gold);
+        }
+
+        .appt-details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            font-size: 0.8rem;
+            color: #aaa;
+            background: #0a0a0a;
+            padding: 12px;
+            border-radius: 6px;
+        }
+
+        .appt-details-grid div strong {
+            color: #ddd;
+            display: block;
+            margin-bottom: 2px;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .appt-actions-bar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding-top: 10px;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .btn-card-action {
+            padding: 8px 14px;
+            border-radius: 4px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid #333;
+            background: #161616;
+            color: #ddd;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-card-action:hover {
+            background: #242424;
+            color: #fff;
+        }
+
+        .btn-card-action.danger:hover {
+            background: #380a0e;
+            border-color: var(--ferrari-red);
+            color: #ff9da6;
+        }
+
+        .btn-card-action.gold:hover {
+            background: #241a08;
+            border-color: var(--gold);
+            color: var(--gold-light);
+        }
+
+        /* --- HORARIOS Y UBICACIÓN SECTION --- */
+        .location-section {
+            background: #090909;
+            border: 1px solid #1c1c1c;
+            border-radius: 8px;
+            padding: 35px;
+            margin-bottom: 50px;
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .hour-pill {
+            background: #111;
+            border: 1px solid #222;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 0.75rem;
+        }
+
+        .hour-pill.closed {
+            border-color: #331518;
+            background: #14090b;
+            color: #ff7582;
+        }
+
+        .hour-pill.open {
+            border-color: #1e3321;
+            background: #09140c;
+            color: #7ce89f;
+        }
+
+        .entrances-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .entrance-box {
+            background: #111;
+            border: 1px solid #242424;
+            padding: 18px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: #bbb;
+            line-height: 1.5;
+        }
+
+        .entrance-box strong {
+            color: #fff;
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.85rem;
+        }
+
+        .entrance-box.red strong {
+            color: #ff4d61;
+        }
+
+        .entrance-box.gold strong {
+            color: var(--gold);
+        }
+
+        .map-iframe-wrap {
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid #292929;
+            height: 380px;
+            margin-top: 20px;
+        }
+
+        .map-iframe-wrap iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* --- BOTÓN FLOTANTE WHATSAPP --- */
+        .btn-wa-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--wa-green);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 22px rgba(0, 0, 0, 0.65);
+            z-index: 9999;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-wa-float:hover {
+            transform: scale(1.1);
+            background-color: #20ba59;
+            box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5);
+            color: white;
+        }
+
+        .btn-wa-float svg {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
+        }
+
+        
+    </style>
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BeautySalon","name":"Celia Figueredo","url":"https://www.celiafigueredo.com/","telephone":"+54 9 11 6580-4616","address":{"@type":"PostalAddress","streetAddress":"Av. Santa Fe 2450, Local 47, 1.er piso","addressLocality":"Buenos Aires","addressRegion":"CABA","addressCountry":"AR"},"sameAs":["https://www.instagram.com/studio_celia_figueredo/"]}
+    </script>
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <meta property="og:image" content="imagenes/headL.webp">
+    <meta name="twitter:image" content="imagenes/headL.webp">
+</head>
+<body>
+
+    <nav>
+        <a href="#inicio" class="logo-nav serif"><img src="imagenes/Logo.webp" alt="Logo Celia Figueredo"><span>CELIA FIGUEREDO</span></a>
+        <div class="nav-links">
+            <a href="#inicio" class="nav-item">Inicio</a>
+            <a href="#estilos" class="nav-item">Estilos</a>
+            <a href="#servicios" class="nav-item">Servicios</a>
+            <a href="#opiniones" class="nav-item">Opiniones</a>
+            <a href="#ubicacion" class="nav-item">Ubicación</a>
+            <a class='nav-item' href='/preguntas.html'>Preguntas</a>
+            <a href="#reservar" class="btn-wa-nav">RESERVAR</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div data-aos="fade-up" data-aos-duration="1500">
+            <p class="hero-kicker">ESTUDIO EXCLUSIVO • DESDE 2016</p>
+            <h1 class="hero-brand"><img src="imagenes/Logo.webp" alt="Logo Celia Figueredo"><span>CELIA FIGUEREDO</span></h1>
+            <p class="hero-copy">Un espacio donde la precisión, la experiencia y el cuidado se encuentran para crear una versión de vos que te represente.</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="#reservar" class="btn-wa-nav" style="padding: 18px 35px; font-size: 0.8rem;">CONSULTAR POR WHATSAPP</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESPEJOS CARRUSEL -->
+    <section id="estilos" class="mirror-section">
+        <div class="category-header"><h2>Galería de Estilos</h2></div>
+        <div class="mirror-track">
+            <div class="mirror-frame"><img src="imagenes/balayage-auto.webp" loading="lazy"><div class="mirror-label">Balayage de Autor</div></div>
+            <div class="mirror-frame"><img src="imagenes/corte-visagismo.webp" alt="Corte unisex" loading="lazy"><div class="mirror-label">Corte &amp; Visagismo</div></div>
+            <div class="mirror-frame"><img src="imagenes/brushing-autor.webp" alt="Brushing profesional" loading="lazy"><div class="mirror-label">Brushing de Autor</div></div>
+            <div class="mirror-frame"><img src="imagenes/peinados-fiesta.webp" alt="Peinado de fiesta" loading="lazy"><div class="mirror-label">Peinados de Fiesta</div></div>
+            <div class="mirror-frame"><img src="imagenes/puntos-de-luz.webp" alt="Reflejos y dimensión" loading="lazy"><div class="mirror-label">Puntos de Luz</div></div>
+            <div class="mirror-frame"><img src="imagenes/brillo-control.webp" alt="Cabello liso y brillante" loading="lazy"><div class="mirror-label">Brillo &amp; Control</div></div>
+            <div class="mirror-frame"><img src="imagenes/coloracion-global-hombre.webp" alt="Coloración global" loading="lazy"><div class="mirror-label">Coloración Global</div></div>
+            <div class="mirror-frame"><img src="imagenes/tratamientos.webp" alt="Tratamiento de brillo" loading="lazy"><div class="mirror-label">Tratamientos</div></div>
+            <div class="mirror-frame"><img src="imagenes/balayage-autor.webp" alt="Balayage de autor" loading="lazy"><div class="mirror-label">Balayage de Autor</div></div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="services-section">
+        <div class="category-header" data-aos="fade-up"><h2>DISEÑO &amp; ESTILO</h2></div>
+        <div class="services-grid">
+            <article class="service-card"><div class="service-media"><img src="imagenes/Corte Unisex.webp" alt="Corte Unisex profesional en salón" loading="lazy"></div><div class="service-copy"><h4>Corte Unisex</h4><span class="tagline">Diseño y Visagismo Personalizado</span><p>Una estructura pensada para acompañar el rostro, la textura y la caída natural del cabello.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/brushing-autor.webp" alt="Brushing profesional con volumen y ondas" loading="lazy"></div><div class="service-copy"><h4>Brushing</h4><span class="tagline">Modelado y Pulido de Alta Gama</span><p>Movimiento, volumen y brillo con un acabado pulido y sofisticado.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/peinados-fiesta.webp" alt="Peinado de fiesta y recogido elegante" loading="lazy"></div><div class="service-copy"><h4>Peinados de Fiesta</h4><span class="tagline">Alta Costura Capilar</span><p>Recogidos y estilismos de ocasión diseñados para acompañar tu look completo.</p></div></article>
+        </div>
+
+        <div class="category-header" data-aos="fade-up"><h2>COLORACIÓN DE AUTOR</h2></div>
+        <div class="services-grid">
+            <article class="service-card"><div class="service-media"><img src="imagenes/coloracion-global-hombre.webp" alt="Coloración global y cabello brillante" loading="lazy"></div><div class="service-copy"><h4>Coloración Global</h4><span class="tagline">Inmersión de Pigmento y Brillo Infinito</span><p>Un tono integral, profundo y luminoso, elegido para crear una identidad de color coherente.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/balayage-auto.webp" alt="Balayage de autor con iluminación natural" loading="lazy"></div><div class="service-copy"><h4>Balayage</h4><span class="tagline">Degradé de Autor teñido por el Sol</span><p>Una transición orgánica de luz y profundidad para un resultado integrado y elegante.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/puntos-de-luz.webp" alt="Reflejos y puntos de luz estratégicos" loading="lazy"></div><div class="service-copy"><h4>Reflejos</h4><span class="tagline">Puntos de Luz Estratégicos</span><p>Dimensión y luminosidad colocadas con precisión para realzar el rostro y el movimiento.</p></div></article>
+        </div>
+
+        <div class="category-header" data-aos="fade-up"><h2>TRATAMIENTOS AVANZADOS</h2></div>
+        <div class="services-grid">
+            <article class="service-card"><div class="service-media"><img src="imagenes/brillo-control.webp" alt="Cabello liso y brillante después de tratamiento" loading="lazy"></div><div class="service-copy"><h4>Alisado Láser</h4><span class="tagline">Tecnología Fotónica Nanoterapia</span><p>Un acabado ultra pulido y uniforme, con foco en brillo, control y una apariencia espejada.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/celulas-madre.webp" alt="Tratamiento capilar profesional aplicado en salón" loading="lazy"></div><div class="service-copy"><h4>Células Madre</h4><span class="tagline">Biotecnología Regenerativa</span><p>Un tratamiento de cuidado intensivo presentado como una experiencia de recuperación y nutrición de la fibra.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/tratamientos.webp" alt="Cabello ultra brillante y pulido" loading="lazy"></div><div class="service-copy"><h4>Botox Capilar</h4><span class="tagline">Relleno e Hidratación</span><p>Una propuesta enfocada en suavidad, brillo, elasticidad y una textura visualmente más uniforme.</p></div></article>
+        </div>
+    </section>
+
+    <section class="questions-strip">
+        <h2>¿TENÉS DUDAS ANTES DE ELEGIR?</h2>
+        <p>Encontrá respuestas sobre servicios, color, tratamientos, reservas y tu visita al atelier.</p>
+        <a href='/preguntas.html'>VER PREGUNTAS FRECUENTES</a>
+    </section>
+
+
+    <!-- GOOGLE REVIEWS -->
+    <section id="opiniones" class="reviews-section">
+        <div class="category-header" data-aos="fade-up">
+            <p class="section-kicker">LA EXPERIENCIA DE QUIENES YA NOS ELIGIERON</p>
+            <h2>OPINIONES DE GOOGLE</h2>
+            <p class="section-intro">Experiencias reales de clientas y clientes que visitaron Celia Figueredo.</p>
+        </div>
+        <div class="reviews-shell" data-aos="fade-up" data-aos-delay="100">
+            <div class="reviews-heading">
+                <span class="reviews-stars">★★★★★</span>
+                <span class="reviews-label">RESEÑAS VERIFICADAS EN GOOGLE</span>
+            </div>
+            <div class="elfsight-app-c80e295e-eb83-4395-aea1-86d0627f4b73" data-elfsight-app-lazy></div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN Y MAPA -->
+    
+    <!-- ========================================== -->
+    <!-- SISTEMA DE RESERVAS Y TURNOS ONLINE        -->
+    <!-- ========================================== -->
+    <section id="reservar" style="padding: 90px 4% 30px; background: #070707; border-top: 1px solid rgba(212,175,55,0.15);">
+        <div style="text-align: center; margin-bottom: 30px;" data-aos="fade-up">
+            <p style="color: var(--gold); letter-spacing: 4px; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 8px;">SISTEMA OFICIAL DE CITAS</p>
+            <h2 style="font-size: clamp(2rem, 5vw, 3.5rem); color: var(--gold); font-family: 'Cormorant Garamond', serif; font-weight: 300;">RESERVAR TURNO ONLINE</h2>
+            <p style="color: #999; max-width: 650px; margin: 10px auto 0; font-size: 0.9rem;">Elegí tu servicio, seleccioná fecha (de martes a sábados de 11 a 18 hs) y coordiná directamente tu cita.</p>
+        </div>
+        <div class="main-container" style="max-width: 1050px; margin: 0 auto;">
+            <!-- PESTAÑAS (NUEVO TURNO / MIS TURNOS) -->
+    <div class="tabs-container">
+        <div class="tabs-pill">
+            <button type="button" class="tab-btn active" id="tabBtnNew" onclick="switchTab('new')">
+                <i class="fas fa-calendar-plus"></i> Reservar Nuevo Turno
+            </button>
+            <button type="button" class="tab-btn" id="tabBtnMy" onclick="switchTab('my')">
+                <i class="fas fa-search"></i> Consultar / Reprogramar Turno
+            </button>
+        </div>
+    </div>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="main-container">
+
+        <!-- ========================================== -->
+        <!-- PESTAÑA 1: FORMULARIO DE NUEVA RESERVA     -->
+        <!-- ========================================== -->
+        <section id="panelNewBooking" class="booking-card">
+            <div class="card-header">
+                <div class="card-header-icon">
+                    <i class="fas fa-scissors"></i>
+                </div>
+                <div class="card-header-text">
+                    <h2>Paso 1: Seleccioná tu Servicio</h2>
+                    <p>Hacé clic en el servicio que deseás realizarte en el Atelier</p>
+                </div>
+            </div>
+
+            <form id="reservationForm" onsubmit="handleFormSubmit(event)">
+                <!-- Selector Visual de Servicios -->
+                <div class="services-grid" id="servicesContainer">
+                    <!-- Inyectado dinámicamente vía JavaScript con todos los servicios oficiales -->
+                </div>
+
+                <!-- Campo adicional para servicio personalizado "Otros" -->
+                <div id="otherDetailsWrap" style="display: none; margin-bottom: 24px;">
+                    <label class="form-label" for="otherDetailsInput">Detalle del servicio que deseás realizar:</label>
+                    <input type="text" id="otherDetailsInput" class="form-input" placeholder="Ej: Tratamiento especial, peinado temático, diagnóstico capilar...">
+                </div>
+
+                <!-- Paso 2: Selección de Fecha y Horario en Cascada -->
+                <div class="form-section-title">
+                    <i class="far fa-calendar-alt"></i> Paso 2: Seleccioná Fecha y Horario (Cascada)
+                </div>
+
+                <div class="datetime-grid">
+                    <!-- Día -->
+                    <div class="form-group">
+                        <label class="form-label" for="selectDay">Día</label>
+                        <select id="selectDay" class="form-select" onchange="onDateCascadaChange()">
+                            <!-- Días 1 a 31 -->
+                        </select>
+                    </div>
+
+                    <!-- Mes -->
+                    <div class="form-group">
+                        <label class="form-label" for="selectMonth">Mes</label>
+                        <select id="selectMonth" class="form-select" onchange="onMonthChange()">
+                            <!-- Enero a Diciembre -->
+                        </select>
+                    </div>
+
+                    <!-- Año -->
+                    <div class="form-group">
+                        <label class="form-label" for="selectYear">Año</label>
+                        <select id="selectYear" class="form-select" onchange="onMonthChange()">
+                            <!-- 2026, 2027 -->
+                        </select>
+                    </div>
+
+                    <!-- Hora (11 a 18) -->
+                    <div class="form-group">
+                        <label class="form-label" for="selectHour">Hora</label>
+                        <select id="selectHour" class="form-select" onchange="onTimeChange()">
+                            <option value="11">11 hs</option>
+                            <option value="12">12 hs</option>
+                            <option value="13">13 hs</option>
+                            <option value="14">14 hs</option>
+                            <option value="15">15 hs</option>
+                            <option value="16">16 hs</option>
+                            <option value="17">17 hs</option>
+                            <option value="18">18 hs</option>
+                        </select>
+                    </div>
+
+                    <!-- Minutos -->
+                    <div class="form-group">
+                        <label class="form-label" for="selectMinute">Minutos</label>
+                        <select id="selectMinute" class="form-select" onchange="onTimeChange()">
+                            <option value="00">:00</option>
+                            <option value="15">:15</option>
+                            <option value="30">:30</option>
+                            <option value="45">:45</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Cartel de Validación de Fecha y Horario -->
+                <div id="dateStatusBox" class="date-status-box valid">
+                    <i class="fas fa-check-circle" id="dateStatusIcon"></i>
+                    <span id="dateStatusText">Fecha disponible para reserva.</span>
+                </div>
+
+                <!-- Paso 3: Datos de Contacto -->
+                <div class="form-section-title">
+                    <i class="far fa-user"></i> Paso 3: Tus Datos de Contacto
+                </div>
+
+                <div class="client-inputs-grid">
+                    <div class="form-group">
+                        <label class="form-label" for="clientName">Nombre y Apellido Completo *</label>
+                        <input type="text" id="clientName" class="form-input" placeholder="Ej: María Elena González" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="clientPhone">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="clientPhone" class="form-input" placeholder="Ej: 11 6580 4616" required>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label class="form-label" for="clientNotes">Notas adicionales o consultas previas (opcional)</label>
+                    <textarea id="clientNotes" class="form-textarea" rows="2" placeholder="Contanos si tenés coloración previa, extensiones, o alguna preferencia..."></textarea>
+                </div>
+
+                <!-- Botón de Envío -->
+                <button type="submit" id="btnSubmitReservation" class="btn-confirm-booking">
+                    <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Confirmar Reserva & Enviar por WhatsApp
+                </button>
+            </form>
+
+            <!-- CAJA DE ÉXITO TRAS CREAR RESERVA -->
+            <div id="successBox" class="success-box">
+                <div class="success-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 8px;">¡Tu turno ha sido registrado con éxito!</h3>
+                <p style="color: #bbb; font-size: 0.85rem; max-width: 600px; margin: 0 auto 12px;">
+                    Te esperamos en nuestro Atelier en Recoleta. Guardá tu código único de reserva:
+                </p>
+
+                <div>
+                    <div class="booking-code-pill" id="bookingCodeDisplay" onclick="copyReservationCode()" title="Click para copiar">
+                        <span id="bookingCodeText">CF-0000</span>
+                        <i class="far fa-copy" style="font-size: 0.9rem;"></i>
+                    </div>
+                </div>
+                <small id="copyFeedback" style="display: block; color: var(--gold); font-size: 0.75rem; margin-bottom: 15px;"></small>
+
+                <div id="successSummary" style="background: #000; border: 1px solid #222; border-radius: 6px; padding: 14px; max-width: 500px; margin: 0 auto 20px; font-size: 0.82rem; text-align: left; color: #ccc;">
+                    <!-- Resumen del turno -->
+                </div>
+
+                <div class="success-actions">
+                    <a id="successWaLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-wa-action">
+                        <i class="fab fa-whatsapp"></i> Abrir WhatsApp de Confirmación
+                    </a>
+                    <button type="button" class="btn-secondary-action" onclick="resetBookingForm()">
+                        <i class="fas fa-plus"></i> Agendar Otro Turno
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- PESTAÑA 2: CONSULTAR / MODIFICAR TURNO     -->
+        <!-- ========================================== -->
+        <section id="panelMyBookings" class="booking-card" style="display: none;">
+            <div class="card-header">
+                <div class="card-header-icon" style="background: #18120b; border-color: rgba(212,175,55,0.4);">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="card-header-text">
+                    <h2>Consultar o Reprogramar Turno</h2>
+                    <p>Buscá por tu nombre y teléfono para ver el estado, cambiar fecha o cancelar con 36 hs de anticipación</p>
+                </div>
+            </div>
+
+            <!-- Formulario de Búsqueda -->
+            <form onsubmit="handleSearchAppointments(event)">
+                <div class="client-inputs-grid">
+                    <div class="form-group">
+                        <label class="form-label" for="searchName">Tu Nombre o Apellido</label>
+                        <input type="text" id="searchName" class="form-input" placeholder="Ej: María Elena" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="searchPhone">Tu Teléfono (o últimos dígitos)</label>
+                        <input type="text" id="searchPhone" class="form-input" placeholder="Ej: 4616" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-secondary-action" style="padding: 12px 24px; font-size: 0.8rem; text-transform: uppercase;">
+                    <i class="fas fa-search"></i> Buscar Reservas
+                </button>
+            </form>
+
+            <!-- Feedback de Acción -->
+            <div id="searchActionAlert" style="display: none; padding: 14px; border-radius: 6px; margin-top: 18px; font-size: 0.82rem;"></div>
+
+            <!-- Lista de Resultados -->
+            <div id="searchResultsList" class="search-results-area"></div>
+        </section>
+
+        
+        </div>
+    </section>
+
+    <section id="ubicacion" class="map-section">
+        <div class="map-grid">
+            <div class="map-info" data-aos="fade-right">
+                <h2>VISÍTANOS EN RECOLETA</h2>
+                <p>Av. Santa Fe 2450, Local 47, 1.er piso.<br>Galería Americana • Esquina Av. Pueyrredón.<br>Ciudad Autónoma de Buenos Aires.</p>
+                <div class="salon-hours-box">
+                    <div class="salon-hours-title"><i class="far fa-clock"></i> Horario de Atención Oficial (Google Maps)</div>
+                    <ul class="salon-hours-list">
+                        <li><strong>Lunes:</strong> <span class="closed-day">Cerrado</span></li>
+                        <li><strong>Martes a Sábado:</strong> <span class="open-day">de 11:00 a 18:00 hs</span></li>
+                        <li><strong>Domingo:</strong> <span class="closed-day">Cerrado</span></li>
+                    </ul>
+                </div>
+
+                <a href="https://maps.app.goo.gl/z59Wu79Yz3fs1Sae8" target="_blank" class="btn-wa-nav" style="padding: 15px 30px;">ABRIR EN GOOGLE MAPS</a>
+            </div>
+            <div class="map-canvas" data-aos="fade-left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4533157529124!2d-58.4031649!3d-34.5952136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca90e3802361%3A0xe2128711e2f4700d!2sStudio%20Celia%20Figueredo!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-brand">
+            <img src="imagenes/Logo.webp" alt="Logo Celia Figueredo">
+            <div class="footer-brand-copy">
+                <a href="#" class="footer-logo serif">CELIA FIGUEREDO</a>
+                <div class="footer-faq"><a href='/preguntas.html'>PREGUNTAS FRECUENTES</a></div>
+                <p class="copy">© 2026 CELIA FIGUEREDO ATELIER • EXCLUSIVIDAD EN DISEÑO CAPILAR</p>
+            </div>
+        </div>
+                <div class="footer-socials">
+            <a href="https://www.instagram.com/studioceliabelleza/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5491165804616?text=Hola%20me%20gustaria%20pedir%20un%20Turno%20para%20..." target="_blank" title="Pedir un Turno por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="copy">© 2026 CELIA FIGUEREDO ATELIER • EXCLUSIVIDAD EN DISEÑO CAPILAR</p>
+        <p style="margin-top: 14px; font-size: 0.75rem; color: #facc15; text-decoration: none;">
+            <a href="https://wa.me/5491176423742?text=hola%20megustaria%20tener%20mi%20propio%20proyecto%20de.." target="_blank" rel="noopener noreferrer" style="color: #facc15; text-decoration: none;">creada por Soul Grafic Desing click para hablar de tu proyecto.</a>
+        </p>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP CON LOGO OFICIAL Y MENSAJE SOLICITADO -->
+    <a href="https://wa.me/5491165804616?text=Hola%20me%20gustaria%20pedir%20un%20Turno%20para%20..." target="_blank" rel="noopener noreferrer" title="Pedir un Turno por WhatsApp" aria-label="Pedir un Turno por WhatsApp" class="btn-wa-flotante">
+        <svg viewBox="0 0 24 24" fill="#ffffff">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: false, mirror: true });
+
+        // Cada servicio abre WhatsApp con el nombre del servicio ya incluido en el mensaje.
+        // Carrusel infinito: movimiento continuo, suave y real de derecha a izquierda.
+        (() => {
+            const track = document.querySelector('.mirror-track');
+            if (!track) return;
+
+            if (!track.dataset.infiniteReady) {
+                const originals = Array.from(track.children);
+                originals.forEach(card => track.appendChild(card.cloneNode(true)));
+                track.dataset.infiniteReady = 'true';
+            }
+
+            let paused = false;
+            let dragging = false;
+            let pointerId = null;
+            let lastX = 0;
+            let lastTime = performance.now();
+            let resumeTimer = null;
+            const speed = 0.55; // px por frame aprox.
+
+            const loopPoint = () => Math.max(1, track.scrollWidth / 2);
+            const normalize = () => {
+                const half = loopPoint();
+                if (track.scrollLeft >= half) track.scrollLeft -= half;
+                if (track.scrollLeft < 0) track.scrollLeft += half;
+            };
+
+            const tick = now => {
+                const dt = Math.min(now - lastTime, 40);
+                lastTime = now;
+                if (!paused && !dragging && !document.hidden) {
+                    track.scrollLeft += speed * (dt / 16.6667);
+                    normalize();
+                }
+                requestAnimationFrame(tick);
+            };
+
+            const pause = () => {
+                paused = true;
+                clearTimeout(resumeTimer);
+            };
+            const resume = () => {
+                clearTimeout(resumeTimer);
+                resumeTimer = setTimeout(() => {
+                    if (!dragging) {
+                        paused = false;
+                        lastTime = performance.now();
+                    }
+                }, 120);
+            };
+
+            const down = e => {
+                dragging = true;
+                pause();
+                pointerId = e.pointerId;
+                lastX = e.clientX;
+                track.classList.add('is-dragging');
+                track.setPointerCapture?.(e.pointerId);
+            };
+            const move = e => {
+                if (!dragging || e.pointerId !== pointerId) return;
+                const dx = e.clientX - lastX;
+                track.scrollLeft -= dx;
+                normalize();
+                lastX = e.clientX;
+            };
+            const up = e => {
+                if (!dragging) return;
+                dragging = false;
+                pointerId = null;
+                track.classList.remove('is-dragging');
+                try { track.releasePointerCapture?.(e.pointerId); } catch (_) {}
+                resume();
+            };
+
+            // Se pausa SOLO al tocar/arrastrar; pasar el mouse por encima no lo detiene.
+            track.addEventListener('pointerdown', down);
+            track.addEventListener('pointermove', move);
+            track.addEventListener('pointerup', up);
+            track.addEventListener('pointercancel', up);
+            track.addEventListener('touchstart', pause, {passive:true});
+            track.addEventListener('touchend', resume, {passive:true});
+            track.addEventListener('touchcancel', resume, {passive:true});
+            track.addEventListener('dragstart', e => e.preventDefault());
+            document.addEventListener('visibilitychange', () => { lastTime = performance.now(); });
+
+            requestAnimationFrame(tick);
+        })();
+
+        // Revelado al entrar en pantalla. Se repite al bajar y volver a subir.
+        (() => {
+            const targets = document.querySelectorAll(
+                '.category-header, .mirror-frame, .service-card, .questions-strip, .reviews-shell, .map-info, .map-canvas, footer, .hero > div'
+            );
+            targets.forEach(el => el.classList.add('scroll-reveal'));
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('is-visible');
+                    else entry.target.classList.remove('is-visible');
+                });
+            }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
+
+            targets.forEach(el => observer.observe(el));
+        })();
+
+        document.querySelectorAll(".service-card").forEach((card) => {
+            const title = card.querySelector("h4");
+            if (!title) return;
+            const service = title.textContent.trim();
+            card.setAttribute("role", "link");
+            card.setAttribute("tabindex", "0");
+            card.setAttribute("aria-label", `Reservar turno para ${service}`);
+
+            const openWhatsApp = () => {
+                const message = `Hola me gustaria pedir un Turno para ${service}`;
+                window.open(`https://wa.me/5491165804616?text=${encodeURIComponent(message)}`, "_blank");
+            };
+
+            card.addEventListener("click", openWhatsApp);
+            card.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    openWhatsApp();
+                }
+            });
+        });
+    
+    
+// DATOS MAESTROS DEL SALON
+        const SALON_DATA = {
+            whatsappNumber: '5491165804616',
+            storageKey: 'studio_celia_figueredo_appointments_v1',
+            openingHour: 11,
+            closingHour: 18,
+            closedDays: [0, 1], // 0: Domingo, 1: Lunes (Cerrado en Google Maps)
+            services: [
+                {
+                    id: 'corte-mujer',
+                    name: 'Corte de pelo mujer',
+                    category: 'Corte & Estilo',
+                    description: 'Corte de precisión personalizado según visagismo facial y textura del cabello.',
+                    duration: '50 min',
+                    badge: 'Popular'
+                },
+                {
+                    id: 'corte-hombre',
+                    name: 'Corte de pelo hombre',
+                    category: 'Corte & Estilo',
+                    description: 'Tijera y máquina de alta definición, perfilado y acabado sofisticado.',
+                    duration: '40 min'
+                },
+                {
+                    id: 'brushing',
+                    name: 'Brushing',
+                    category: 'Corte & Estilo',
+                    description: 'Modelado térmico y pulido profesional para un movimiento y brillo extraordinario.',
+                    duration: '45 min'
+                },
+                {
+                    id: 'peinados-fiesta',
+                    name: 'Peinados de fiesta',
+                    category: 'Corte & Estilo',
+                    description: 'Recogidos de alta costura, ondas al agua o estilos de gala para ocasiones especiales.',
+                    duration: '75 min',
+                    badge: 'Exclusivo'
+                },
+                {
+                    id: 'coloracion-global',
+                    name: 'Coloración global',
+                    category: 'Color & Luz',
+                    description: 'Pigmentos puros de vanguardia para cobertura perfecta y máxima luminosidad.',
+                    duration: '90 min'
+                },
+                {
+                    id: 'balayage',
+                    name: 'Balayage',
+                    category: 'Color & Luz',
+                    description: 'Degradé artesanal a mano alzada para un efecto iluminado multidimensional.',
+                    duration: '150 min',
+                    badge: 'Destacado'
+                },
+                {
+                    id: 'reflejos',
+                    name: 'Reflejos',
+                    category: 'Color & Luz',
+                    description: 'Mechas delicadas y precisas con matización personalizada.',
+                    duration: '120 min'
+                },
+                {
+                    id: 'alisado-laser',
+                    name: 'Alisado láser',
+                    category: 'Tratamientos & Alisados',
+                    description: 'Tecnología láser fotónica para sellado de cutícula, lacio perfecto y cero frizz.',
+                    duration: '150 min',
+                    badge: 'Premium'
+                },
+                {
+                    id: 'celulas-madre',
+                    name: 'Células madre',
+                    category: 'Tratamientos & Alisados',
+                    description: 'Regeneración celular capilar intensiva para cabellos dañados o afinados.',
+                    duration: '75 min'
+                },
+                {
+                    id: 'botox-capilar',
+                    name: 'Botox capilar',
+                    category: 'Tratamientos & Alisados',
+                    description: 'Relleno de fibra capilar con ácido hialurónico y colágeno para máxima sedosidad.',
+                    duration: '60 min'
+                },
+                {
+                    id: 'otros',
+                    name: 'Otros',
+                    category: 'Personalizado',
+                    description: 'Consulta o servicio personalizado a coordinar directamente con Celia Figueredo.',
+                    duration: 'A convenir'
+                }
+            ]
+        };
+
+        const MONTH_NAMES = [
+            'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+            'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+        ];
+
+        let selectedServiceId = 'corte-mujer';
+        let latestCreatedAppointment = null;
+
+        // INICIALIZACIÓN
+        document.addEventListener('DOMContentLoaded', () => {
+            renderServices();
+            setupDateCascada();
+            evaluateSelectedDate();
+        });
+
+        // RENDERIZADO DE SERVICIOS
+        function renderServices() {
+            const container = document.getElementById('servicesContainer');
+            if (!container) return;
+
+            container.innerHTML = SALON_DATA.services.map(s => {
+                const isSelected = s.id === selectedServiceId;
+                return `
+                    <div class="service-option ${isSelected ? 'selected' : ''}" onclick="selectService('${s.id}')" id="svc-${s.id}">
+                        <div class="service-option-top">
+                            <span class="service-name">${s.name}</span>
+                            ${s.badge ? `<span class="service-badge">${s.badge}</span>` : ''}
+                        </div>
+                        <p class="service-desc">${s.description}</p>
+                        <div class="service-meta">
+                            <i class="far fa-clock"></i> ${s.duration} • ${s.category}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function selectService(id) {
+            selectedServiceId = id;
+            document.querySelectorAll('.service-option').forEach(el => el.classList.remove('selected'));
+            const target = document.getElementById(`svc-${id}`);
+            if (target) target.classList.add('selected');
+
+            // Mostrar u ocultar campo de otros detalles
+            const otherWrap = document.getElementById('otherDetailsWrap');
+            if (otherWrap) {
+                otherWrap.style.display = id === 'otros' ? 'block' : 'none';
+            }
+        }
+
+        // CASCADA DE FECHAS
+        function setupDateCascada() {
+            const now = new Date();
+            // Calcular fecha sugerida (mañana o martes si es domingo/lunes)
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 1);
+            if (targetDate.getDay() === 0) targetDate.setDate(targetDate.getDate() + 2); // De domingo salta a martes
+            else if (targetDate.getDay() === 1) targetDate.setDate(targetDate.getDate() + 1); // De lunes salta a martes
+
+            // Años (año actual y siguiente)
+            const currentYear = now.getFullYear();
+            const yearSelect = document.getElementById('selectYear');
+            yearSelect.innerHTML = `
+                <option value="${currentYear}">${currentYear}</option>
+                <option value="${currentYear + 1}">${currentYear + 1}</option>
+            `;
+            yearSelect.value = targetDate.getFullYear();
+
+            // Meses
+            const monthSelect = document.getElementById('selectMonth');
+            monthSelect.innerHTML = MONTH_NAMES.map((name, idx) => 
+                `<option value="${idx + 1}">${name}</option>`
+            ).join('');
+            monthSelect.value = targetDate.getMonth() + 1;
+
+            // Días
+            updateDaysInMonth();
+            const daySelect = document.getElementById('selectDay');
+            daySelect.value = targetDate.getDate();
+
+            // Hora inicial
+            document.getElementById('selectHour').value = '11';
+            document.getElementById('selectMinute').value = '00';
+        }
+
+        function onMonthChange() {
+            updateDaysInMonth();
+            evaluateSelectedDate();
+        }
+
+        function onDateCascadaChange() {
+            evaluateSelectedDate();
+        }
+
+        function onTimeChange() {
+            evaluateSelectedDate();
+        }
+
+        function updateDaysInMonth() {
+            const year = parseInt(document.getElementById('selectYear').value, 10);
+            const month = parseInt(document.getElementById('selectMonth').value, 10);
+            const daysInMonth = new Date(year, month, 0).getDate();
+
+            const daySelect = document.getElementById('selectDay');
+            const currentSelected = parseInt(daySelect.value, 10) || 1;
+
+            daySelect.innerHTML = '';
+            for (let d = 1; d <= daysInMonth; d++) {
+                const opt = document.createElement('option');
+                opt.value = d;
+                opt.textContent = `${d}`;
+                daySelect.appendChild(opt);
+            }
+
+            daySelect.value = Math.min(currentSelected, daysInMonth);
+        }
+
+        // EVALUACIÓN DE FECHA (LUNES Y DOMINGOS CERRADO, PASADO, ETC.)
+        function evaluateSelectedDate() {
+            const year = parseInt(document.getElementById('selectYear').value, 10);
+            const month = parseInt(document.getElementById('selectMonth').value, 10);
+            const day = parseInt(document.getElementById('selectDay').value, 10);
+            const hour = document.getElementById('selectHour').value;
+            const minute = document.getElementById('selectMinute').value;
+
+            const selectedDate = new Date(year, month - 1, day);
+            const dayOfWeek = selectedDate.getDay(); // 0 Dom, 1 Lun
+
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            const compDate = new Date(year, month - 1, day);
+            compDate.setHours(0, 0, 0, 0);
+
+            const isPast = compDate < today;
+            const isClosed = dayOfWeek === 0 || dayOfWeek === 1; // Dom o Lun
+
+            const box = document.getElementById('dateStatusBox');
+            const icon = document.getElementById('dateStatusIcon');
+            const text = document.getElementById('dateStatusText');
+            const submitBtn = document.getElementById('btnSubmitReservation');
+
+            box.className = 'date-status-box';
+
+            if (isClosed) {
+                box.classList.add('closed');
+                icon.className = 'fas fa-exclamation-triangle';
+                const msg = dayOfWeek === 1 
+                    ? 'Los lunes el Atelier permanece cerrado (según horario oficial de Google Maps). Por favor seleccioná de martes a sábado.'
+                    : 'Los domingos el Atelier permanece cerrado. Por favor seleccioná de martes a sábado de 11 a 18 hs.';
+                text.textContent = msg;
+                submitBtn.disabled = true;
+                return false;
+            } else if (isPast) {
+                box.classList.add('past');
+                icon.className = 'fas fa-history';
+                text.textContent = 'La fecha seleccionada ya ha pasado. Por favor elegí una fecha a partir de hoy.';
+                submitBtn.disabled = true;
+                return false;
+            } else {
+                box.classList.add('valid');
+                icon.className = 'fas fa-check-circle';
+                const dayNames = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+                text.textContent = `Fecha válida: ${dayNames[dayOfWeek]} ${day} de ${MONTH_NAMES[month - 1]} ${year} a las ${hour}:${minute} hs.`;
+                submitBtn.disabled = false;
+                return true;
+            }
+        }
+
+        // CAMBIO DE PESTAÑAS (RESERVAR / MIS TURNOS)
+        function switchTab(tab) {
+            const tabBtnNew = document.getElementById('tabBtnNew');
+            const tabBtnMy = document.getElementById('tabBtnMy');
+            const panelNew = document.getElementById('panelNewBooking');
+            const panelMy = document.getElementById('panelMyBookings');
+
+            if (tab === 'new') {
+                tabBtnNew.classList.add('active');
+                tabBtnMy.classList.remove('active');
+                panelNew.style.display = 'block';
+                panelMy.style.display = 'none';
+            } else {
+                tabBtnMy.classList.add('active');
+                tabBtnNew.classList.remove('active');
+                panelMy.style.display = 'block';
+                panelNew.style.display = 'none';
+            }
+        }
+
+        // SUBMIT DEL FORMULARIO DE RESERVA
+        function handleFormSubmit(e) {
+            e.preventDefault();
+
+            if (!evaluateSelectedDate()) {
+                alert('Por favor seleccioná una fecha válida de martes a sábados.');
+                return;
+            }
+
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const notes = document.getElementById('clientNotes').value.trim();
+            const otherDetails = document.getElementById('otherDetailsInput') ? document.getElementById('otherDetailsInput').value.trim() : '';
+
+            if (!name || name.length < 3) {
+                alert('Por favor ingresá tu nombre y apellido completo (mínimo 3 caracteres).');
+                return;
+            }
+
+            const cleanPhone = phone.replace(/\D/g, '');
+            if (!cleanPhone || cleanPhone.length < 8) {
+                alert('Por favor ingresá un número de teléfono / WhatsApp válido (mínimo 8 dígitos).');
+                return;
+            }
+
+            const year = document.getElementById('selectYear').value;
+            const month = String(document.getElementById('selectMonth').value).padStart(2, '0');
+            const day = String(document.getElementById('selectDay').value).padStart(2, '0');
+            const hour = document.getElementById('selectHour').value;
+            const minute = document.getElementById('selectMinute').value;
+
+            const dateStr = `${year}-${month}-${day}`;
+            const timeStr = `${hour}:${minute}`;
+
+            const serviceObj = SALON_DATA.services.find(s => s.id === selectedServiceId) || SALON_DATA.services[0];
+            const randomCode = Math.floor(1000 + Math.random() * 9000);
+            const appointmentId = `CF-${randomCode}`;
+
+            const appointment = {
+                id: appointmentId,
+                clientName: name,
+                phone: phone,
+                serviceId: serviceObj.id,
+                serviceName: serviceObj.name,
+                otherDetails: serviceObj.id === 'otros' ? otherDetails : undefined,
+                date: dateStr,
+                time: timeStr,
+                notes: notes || undefined,
+                status: 'active',
+                createdAt: new Date().toISOString()
+            };
+
+            // Guardar en LocalStorage para persistencia
+            saveAppointment(appointment);
+            latestCreatedAppointment = appointment;
+
+            // Mostrar caja de éxito
+            showSuccessBox(appointment);
+
+            // Generar enlace WhatsApp y abrir en nueva pestaña
+            const waUrl = buildWhatsAppReservationUrl(appointment);
+            window.open(waUrl, '_blank');
+        }
+
+        function showSuccessBox(appt) {
+            document.getElementById('reservationForm').style.display = 'none';
+            const box = document.getElementById('successBox');
+            box.style.display = 'block';
+
+            document.getElementById('bookingCodeText').textContent = appt.id;
+
+            const friendlyDate = formatFriendlyDate(appt.date);
+            const summaryEl = document.getElementById('successSummary');
+            summaryEl.innerHTML = `
+                <div style="margin-bottom: 6px;"><strong>Cliente:</strong> ${appt.clientName} (${appt.phone})</div>
+                <div style="margin-bottom: 6px;"><strong>Servicio:</strong> ${appt.serviceName} ${appt.otherDetails ? `(${appt.otherDetails})` : ''}</div>
+                <div style="margin-bottom: 6px;"><strong>Fecha & Hora:</strong> ${friendlyDate} a las ${appt.time} hs</div>
+                <div style="margin-bottom: 6px;"><strong>Lugar:</strong> Galería Americana • Av. Santa Fe 2450, Local 47, 1.er piso, Recoleta</div>
+                <div><strong>Política de Modificación:</strong> Hasta 36 hs antes del turno.</div>
+            `;
+
+            const waUrl = buildWhatsAppReservationUrl(appt);
+            document.getElementById('successWaLink').href = waUrl;
+
+            box.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function resetBookingForm() {
+            document.getElementById('reservationForm').reset();
+            document.getElementById('reservationForm').style.display = 'block';
+            document.getElementById('successBox').style.display = 'none';
+            setupDateCascada();
+            evaluateSelectedDate();
+            document.getElementById('panelNewBooking').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function copyReservationCode() {
+            const code = document.getElementById('bookingCodeText').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const fb = document.getElementById('copyFeedback');
+                fb.textContent = '¡Código ' + code + ' copiado al portapapeles!';
+                setTimeout(() => { fb.textContent = ''; }, 3000);
+            });
+        }
+
+        // CONSTRUCCIÓN DEL MENSAJE OFICIAL DE WHATSAPP
+        function buildWhatsAppReservationUrl(appt) {
+            const friendlyDate = formatFriendlyDate(appt.date);
+            const text = 
+`✨ *NUEVA RESERVA - STUDIO CELIA FIGUEREDO* ✨
+
+👤 *Cliente:* ${appt.clientName}
+📱 *Teléfono:* ${appt.phone}
+✂️ *Servicio:* ${appt.serviceName}${appt.otherDetails ? ` (${appt.otherDetails})` : ''}
+📅 *Fecha:* ${friendlyDate}
+⏰ *Horario:* ${appt.time} hs
+📍 *Ubicación:* Av. Santa Fe 2450, Local 47, 1.er piso (Galería Americana, Recoleta)
+🏷️ *Código de Turno:* ${appt.id}
+${appt.notes ? `📝 *Notas:* ${appt.notes}\n` : ''}
+¡Hola Celia! Acabo de registrar mi turno en la web. Te envío este mensaje para coordinar y dejar confirmada la cita. ¡Muchas gracias!`;
+
+            return `https://wa.me/${SALON_DATA.whatsappNumber}?text=${encodeURIComponent(text)}`;
+        }
+
+        // BÚSQUEDA Y GESTIÓN DE TURNOS (POLÍTICA 36 HORAS)
+        function handleSearchAppointments(e) {
+            e.preventDefault();
+            const nameQ = document.getElementById('searchName').value.trim().toLowerCase();
+            const phoneQ = document.getElementById('searchPhone').value.replace(/\D/g, '');
+
+            const stored = getStoredAppointments();
+            const results = stored.filter(appt => {
+                const apptName = appt.clientName.toLowerCase();
+                const apptPhoneDigits = appt.phone.replace(/\D/g, '');
+
+                const nameMatch = nameQ ? (apptName.includes(nameQ) || nameQ.includes(apptName)) : true;
+                const phoneMatch = phoneQ ? (apptPhoneDigits.endsWith(phoneQ) || apptPhoneDigits.includes(phoneQ)) : true;
+
+                return nameMatch && phoneMatch;
+            });
+
+            renderSearchResults(results);
+        }
+
+        function renderSearchResults(list) {
+            const container = document.getElementById('searchResultsList');
+            if (!container) return;
+
+            if (list.length === 0) {
+                container.innerHTML = `
+                    <div style="text-align: center; padding: 35px 20px; background: #0a0a0a; border: 1px dashed #333; border-radius: 6px;">
+                        <i class="far fa-folder-open" style="font-size: 2rem; color: #666; margin-bottom: 10px; display: block;"></i>
+                        <p style="color: #bbb; font-size: 0.9rem;">No se encontraron reservas con esos datos.</p>
+                        <p style="color: #666; font-size: 0.75rem;">Verificá que el nombre y los últimos números de teléfono coincidan con los de la reserva.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = list.map(appt => {
+                const policy = check36HourPolicy(appt.date, appt.time);
+                const friendlyDate = formatFriendlyDate(appt.date);
+                const statusClass = appt.status === 'active' ? 'status-active' : (appt.status === 'rescheduled' ? 'status-rescheduled' : 'status-cancelled');
+                const statusLabel = appt.status === 'active' ? 'Activo' : (appt.status === 'rescheduled' ? 'Reprogramado' : 'Cancelado');
+
+                return `
+                    <div class="appointment-card-item ${statusClass}">
+                        <div class="appt-header">
+                            <div>
+                                <span class="appt-title">${appt.serviceName}</span>
+                                <span class="appt-code">${appt.id}</span>
+                            </div>
+                            <span style="font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; background: #1a1a1a; color: #ddd; text-transform: uppercase;">
+                                ${statusLabel}
+                            </span>
+                        </div>
+
+                        <div class="appt-details-grid">
+                            <div>
+                                <strong>Fecha & Hora</strong>
+                                ${friendlyDate} • ${appt.time} hs
+                            </div>
+                            <div>
+                                <strong>Cliente</strong>
+                                ${appt.clientName} (${appt.phone})
+                            </div>
+                            <div>
+                                <strong>Política 36 hs</strong>
+                                <span style="color: ${policy.canModify ? '#7ce89f' : '#ff7582'};">
+                                    ${policy.formattedNotice}
+                                </span>
+                            </div>
+                        </div>
+
+                        ${appt.status !== 'cancelled' ? `
+                            <div class="appt-actions-bar">
+                                ${policy.canModify ? `
+                                    <button type="button" class="btn-card-action gold" onclick="promptReschedule('${appt.id}')">
+                                        <i class="fas fa-calendar-alt"></i> Reprogramar
+                                    </button>
+                                    <button type="button" class="btn-card-action danger" onclick="confirmCancelAppointment('${appt.id}')">
+                                        <i class="fas fa-times"></i> Cancelar Reserva
+                                    </button>
+                                ` : `
+                                    <span style="font-size: 0.72rem; color: #888; align-self: center;">
+                                        <i class="fas fa-lock"></i> Fuera del plazo de 36 hs para cambios automáticos.
+                                    </span>
+                                `}
+                                <a href="https://wa.me/${SALON_DATA.whatsappNumber}?text=Hola%20Celia!%20Consulto%20por%20mi%20reserva%20${appt.id}" target="_blank" rel="noopener noreferrer" class="btn-card-action" style="margin-left: auto;">
+                                    <i class="fab fa-whatsapp"></i> Hablar con Celia
+                                </a>
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // POLÍTICA DE 36 HORAS
+        function check36HourPolicy(dateStr, timeStr) {
+            try {
+                const [y, m, d] = dateStr.split('-').map(Number);
+                const [h, min] = (timeStr || '18:00').split(':').map(Number);
+                const apptDate = new Date(y, m - 1, d, h, min || 0);
+
+                const now = new Date();
+                const diffHours = (apptDate.getTime() - now.getTime()) / (1000 * 60 * 60);
+                const canModify = diffHours >= 36;
+
+                if (diffHours < 0) {
+                    return { canModify: false, formattedNotice: 'Este turno ya ha transcurrido.' };
+                } else if (canModify) {
+                    return { canModify: true, formattedNotice: `Faltan ${Math.floor(diffHours)} hs (Habilitado para cambios)` };
+                } else {
+                    return { canModify: false, formattedNotice: `Faltan ${Math.max(0, Math.floor(diffHours))} hs (Requiere mínimo 36 hs)` };
+                }
+            } catch (e) {
+                return { canModify: false, formattedNotice: 'No se pudo verificar el horario.' };
+            }
+        }
+
+        function promptReschedule(apptId) {
+            const newDate = prompt('Ingresá la nueva fecha deseada (Formato AAAA-MM-DD, ejemplo: 2026-10-15 de martes a sábado):');
+            if (!newDate) return;
+
+            const [y, m, d] = newDate.split('-').map(Number);
+            const testD = new Date(y, m - 1, d);
+            if (testD.getDay() === 0 || testD.getDay() === 1) {
+                alert('El estudio no abre domingos ni lunes. Por favor elegí una fecha de martes a sábado.');
+                return;
+            }
+
+            const newTime = prompt('Ingresá el nuevo horario deseado (de 11 a 18 hs, ejemplo: 15:30):', '12:00');
+            if (!newTime) return;
+
+            const stored = getStoredAppointments();
+            const target = stored.find(a => a.id === apptId);
+            if (target) {
+                target.date = newDate;
+                target.time = newTime;
+                target.status = 'rescheduled';
+                localStorage.setItem(SALON_DATA.storageKey, JSON.stringify(stored));
+
+                alert(`¡Turno ${apptId} reprogramado con éxito!`);
+                renderSearchResults(stored.filter(a => a.id === apptId));
+
+                // Abrir WhatsApp notificando reprogramación
+                const text = `🔄 *REPROGRAMACIÓN DE TURNO - STUDIO CELIA FIGUEREDO*\n\nHola Celia, solicito reprogramar mi turno *${apptId}* para el día *${formatFriendlyDate(newDate)}* a las *${newTime} hs*. ¡Muchas gracias!`;
+                window.open(`https://wa.me/${SALON_DATA.whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank');
+            }
+        }
+
+        function confirmCancelAppointment(apptId) {
+            if (!confirm(`¿Estás segura de cancelar la reserva ${apptId}? Esta acción no se puede deshacer.`)) {
+                return;
+            }
+
+            const stored = getStoredAppointments();
+            const target = stored.find(a => a.id === apptId);
+            if (target) {
+                target.status = 'cancelled';
+                localStorage.setItem(SALON_DATA.storageKey, JSON.stringify(stored));
+
+                alert(`Turno ${apptId} cancelado correctamente.`);
+                renderSearchResults(stored.filter(a => a.id === apptId));
+
+                // Notificar por WhatsApp
+                const text = `❌ *CANCELACIÓN DE TURNO - STUDIO CELIA FIGUEREDO*\n\nHola Celia, te aviso que cancelé mi turno *${apptId}* correspondiente a *${target.clientName}*. ¡Gracias!`;
+                window.open(`https://wa.me/${SALON_DATA.whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank');
+            }
+        }
+
+        // UTILIDADES DE ALMACENAMIENTO LOCAL
+        function getStoredAppointments() {
+            try {
+                const raw = localStorage.getItem(SALON_DATA.storageKey);
+                return raw ? JSON.parse(raw) : [];
+            } catch (e) {
+                return [];
+            }
+        }
+
+        function saveAppointment(appt) {
+            try {
+                const current = getStoredAppointments();
+                const filtered = current.filter(a => a.id !== appt.id);
+                localStorage.setItem(SALON_DATA.storageKey, JSON.stringify([appt, ...filtered]));
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function formatFriendlyDate(dateStr) {
+            try {
+                const [y, m, d] = dateStr.split('-').map(Number);
+                const date = new Date(y, m - 1, d);
+                return date.toLocaleDateString('es-AR', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+            } catch (e) {
+                return dateStr;
+            }
+        }
+    
+    </script>
+</body>
+</html>

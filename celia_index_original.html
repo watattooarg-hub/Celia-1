@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celia Figueredo | Peluquería en Recoleta, Buenos Aires | Diseño Capilar</title>
+    <meta name="description" content="Celia Figueredo — atelier de diseño capilar en Recoleta, Buenos Aires. Corte, brushing, peinados, coloración, balayage, reflejos y tratamientos avanzados.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#050505">
+    <link rel="canonical" href="https://www.celiafigueredo.com/">
+    <link rel="icon" type="image/webp" href="imagenes/headL.webp">
+    <link rel="shortcut icon" href="imagenes/headL.webp" type="image/webp">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Celia Figueredo | Atelier de Diseño Capilar">
+    <meta property="og:description" content="Diseño capilar, color y tratamientos personalizados en Recoleta, Buenos Aires.">
+    <meta property="og:locale" content="es_AR">
+    
+    <!-- Fuentes: Cormorant Garamond (Fina) y Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --deep-black: #050505;
+            --gold: #D4AF37;
+            --ferrari-red: #FF2800;
+            --ivory: #F5F5F0;
+            --text-muted: #a0a0a0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--deep-black);
+            color: var(--ivory);
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, .serif { 
+            font-family: 'Cormorant Garamond', serif; 
+            font-weight: 300; 
+            text-transform: uppercase; 
+            letter-spacing: 4px; 
+        }
+
+        /* --- NAVEGACIÓN --- */
+        nav {
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(5, 5, 5, 0.95);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .logo-nav { color: var(--gold); text-decoration: none; font-size: 1.12rem; letter-spacing: 3px; white-space: nowrap; display:flex; align-items:center; gap:10px; min-width:0; }
+        .logo-nav img { width:34px; height:34px; object-fit:contain; display:block; flex:0 0 auto; }
+        .logo-nav span { display:block; overflow:hidden; text-overflow:ellipsis; }
+        .nav-links { display: flex; gap: 17px; align-items: center; flex-wrap: nowrap; }
+        .nav-item { color: white; text-decoration: none; font-size: 0.62rem; letter-spacing: 1.4px; white-space: nowrap; text-transform: uppercase; transition: 0.3s; }
+        .nav-item:hover { color: var(--gold); }
+
+        .btn-wa-nav { background: var(--gold); color: black; padding: 8px 14px; font-size: 0.62rem; letter-spacing: 1.2px; white-space: nowrap; font-weight: 600; text-decoration: none; }
+
+
+        .brand-lockup {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        .brand-lockup img {
+            width: 42px;
+            height: 42px;
+            object-fit: contain;
+            display: block;
+            flex: 0 0 auto;
+        }
+        .hero-brand {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .hero-brand img {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            display: block;
+        }
+        .footer-brand { justify-content:center; align-items:center; width:100%; gap:15px; margin-left:auto; margin-right:auto; }
+        .footer-brand img {
+            width:200px;
+            height:200px;
+        }
+        @media (max-width: 600px) {
+            .brand-lockup { gap: 7px; }
+            .brand-lockup img { width: 34px; height: 34px; }
+            .hero-brand { gap: 10px; }
+            .hero-brand img { width: 300px; height: 300px; }
+        }
+
+        /* --- HERO --- */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('imagenes/hero-bg.webp');
+            background-size: cover;
+            background-position: center;
+            padding: 0 5%;
+        }
+
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 5rem); color: var(--gold); margin-bottom: 15px; }
+        .hero-kicker {
+            display: block;
+            text-align: center;
+            color: var(--gold) !important;
+            font-size: clamp(.72rem, 1.4vw, .95rem);
+            letter-spacing: clamp(2px, .45vw, 5px);
+            line-height: 1.4;
+            margin: 0 auto 18px !important;
+            padding-top: 34px;
+            width: 100%;
+        }
+        .hero-copy {
+            display: block;
+            width: min(900px, 92vw);
+            margin: 0 auto 35px !important;
+            text-align: center;
+            line-height: 1.55;
+        }
+        .hero p { font-family: 'Cormorant Garamond'; font-style: italic; font-size: 1.5rem; max-width: 800px; color: #eee; font-weight: 300; margin-bottom: 35px; }
+
+        /* --- CARRUSEL ESPEJOS --- */
+        .mirror-section { 
+            padding: 80px 0 0px; 
+            background: #080808; 
+            overflow: hidden; 
+        }
+        .mirror-track {
+            display:flex;
+            gap:30px;
+            padding:20px;
+            width:100%;
+            overflow-x:auto;
+            overflow-y:hidden;
+            scroll-behavior:auto;
+            scrollbar-width:none;
+            -ms-overflow-style:none;
+            cursor:grab;
+            touch-action:pan-y;
+            user-select:none;
+            -webkit-overflow-scrolling:touch;
+        }
+        .mirror-track::-webkit-scrollbar { display:none; }
+        .mirror-track.is-dragging { cursor:grabbing; scroll-behavior:auto; }
+        
+        .mirror-frame {
+            flex:0 0 clamp(250px, 28vw, 320px);
+            width:clamp(250px, 28vw, 320px);
+            height:clamp(350px, 40vw, 450px);
+            border: 8px solid #1a1a1a;
+            border-image: linear-gradient(to bottom, #D4AF37, #4a3a10) 1;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        .mirror-frame img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; }
+        .mirror-frame:hover img { transform: scale(1.1); }
+        
+        .mirror-label {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.7);
+            padding: 15px;
+            text-align: center;
+            font-family: 'Cormorant Garamond';
+            font-size: 1rem;
+            letter-spacing: 2px;
+            color: var(--gold);
+        }
+
+        /* --- REVELADO SUTIL AL HACER SCROLL --- */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translate3d(0, 34px, 0);
+            transition: opacity 0.9s ease, transform 0.9s cubic-bezier(.22,.61,.36,1);
+            will-change: opacity, transform;
+        }
+        .scroll-reveal.is-visible {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+        .mirror-frame.scroll-reveal {
+            transition-duration: 1s;
+        }
+
+        /* --- SERVICIOS --- */
+        .services-section { padding: 0 8% 100px; }
+        .category-header { text-align: center; margin: 60px 0 40px; }
+        .category-header h2 { font-size: 2.8rem; color: var(--gold); border-bottom: 1px solid rgba(212, 175, 55, 0.2); display: inline-block; padding-bottom: 10px; }
+        
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 35px; margin-bottom: 60px; }
+        
+        .service-link { text-decoration: none; display: block; }
+        .service-card { 
+            padding: 25px; 
+            border-left: 1px solid rgba(255, 40, 0, 0.2); 
+            background: rgba(255,255,255,0.01);
+            transition: 0.4s;
+            height: 100%;
+        }
+        .service-link:hover .service-card { border-left: 2px solid var(--ferrari-red); background: rgba(255,255,255,0.03); transform: translateY(-5px); }
+        
+        .service-card h4 { font-size: 1.4rem; color: white; margin-bottom: 5px; }
+        .service-card .tagline { font-family: 'Cormorant Garamond'; font-style: italic; color: var(--gold); display: block; margin-bottom: 15px; font-size: 1.1rem; }
+        .service-card p { color: var(--text-muted); font-size: 0.85rem; font-weight: 300; }
+
+
+        .service-card { padding: 0; overflow: hidden; border-left: 1px solid rgba(255, 40, 0, 0.2); background: rgba(255,255,255,0.015); transition: 0.4s; height: 100%; }
+        .service-card:hover { border-left: 2px solid var(--gold); background: rgba(255,255,255,0.035); transform: translateY(-6px); }
+         .service-card { cursor: pointer; }
+         .service-card:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
+        .service-media { height: 235px; overflow: hidden; background:#0b0b0b; }
+        .service-media img { width:100%; height:100%; object-fit:cover; display:block; transition: transform .8s ease, filter .8s ease; filter:saturate(.9) contrast(1.04); }
+        .service-card:hover .service-media img { transform:scale(1.055); filter:saturate(1.05) contrast(1.06); }
+        .service-copy { padding: 24px 25px 28px; }
+        .service-copy h4 { font-size: 1.32rem; color: white; margin-bottom: 5px; }
+        .service-copy .tagline { font-family:'Cormorant Garamond'; font-style:italic; color:var(--gold); display:block; margin-bottom:14px; font-size:1.05rem; }
+        .service-copy p { color:var(--text-muted); font-size:.84rem; font-weight:300; }
+        .questions-strip { padding:70px 8%; background:#080808; border-top:1px solid #111; border-bottom:1px solid #111; text-align:center; }
+        .questions-strip h2 { color:var(--gold); font-size:2.4rem; margin-bottom:10px; }
+        .questions-strip p { color:#999; max-width:720px; margin:0 auto 25px; font-weight:300; }
+        .questions-strip a { display:inline-block; color:#050505; background:var(--gold); padding:13px 24px; text-decoration:none; font-size:.65rem; letter-spacing:2px; font-weight:600; }
+        @media (max-width: 1180px) and (min-width: 993px) { .nav-links { gap:12px; } .nav-item { font-size:.57rem; letter-spacing:1px; } .logo-nav{font-size:1rem;letter-spacing:2px;} }
+
+        /* --- UBICACIÓN Y MAPA --- */
+
+        .reviews-section { padding: 100px 6%; background: #070707; border-top: 1px solid rgba(212,175,55,.10); border-bottom: 1px solid rgba(212,175,55,.10); }
+        .reviews-section .category-header { max-width: 900px; margin: 0 auto 42px; text-align: center; }
+        .reviews-section .section-kicker { color: var(--gold); letter-spacing: 4px; font-size: .68rem; margin-bottom: 10px; }
+        .reviews-section .section-intro { color: #8f8f8f; font-size: .9rem; max-width: 680px; margin: 10px auto 0; }
+        .reviews-shell { max-width: 1180px; margin: 0 auto; padding: 28px 28px 34px; background: #0b0b0b; border: 1px solid rgba(212,175,55,.18); box-shadow: 0 20px 60px rgba(0,0,0,.28); }
+        .reviews-heading { display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:22px; flex-wrap:wrap; }
+        .reviews-stars { color: var(--gold); letter-spacing: 4px; font-size: 1rem; }
+        .reviews-label { color:#777; font-size:.64rem; letter-spacing:3px; }
+        .reviews-shell .elfsight-app-c80e295e-eb83-4395-aea1-86d0627f4b73 { min-height: 240px; }
+
+        .map-section { padding: 100px 8%; background: #080808; }
+        .map-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        
+        .map-info h2 { font-size: 2.5rem; color: var(--gold); margin-bottom: 20px; }
+        .map-info p { font-size: 1.1rem; margin-bottom: 30px; font-weight: 200; }
+        
+        .map-canvas { height: 450px; border: 1px solid #222; filter: contrast(1.1) brightness(0.9); }
+
+        /* --- FOOTER --- */
+        footer { padding: 60px 8% 30px; border-top: 1px solid #111; text-align: center; }
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 28px;
+            width: 100%;
+            margin: 0 auto 28px;
+            text-align: left;
+        }
+        .footer-brand img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            flex: 0 0 auto;
+        }
+        .footer-brand-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .footer-logo {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 14px;
+            display: block;
+            text-decoration: none;
+        }
+        .footer-faq {
+            margin-bottom: 18px;
+        }
+        .footer-faq a {
+            color: var(--gold);
+            text-decoration: none;
+            font-size: .68rem;
+            letter-spacing: 2px;
+        }
+        .footer-socials { margin-bottom: 30px; }
+        .footer-socials a { color: white; margin: 0 15px; font-size: 1.2rem; transition: 0.3s; }
+        .footer-socials a:hover { color: var(--gold); }
+        .copy { font-size: 0.65rem; color: #444; letter-spacing: 2px; }
+
+        @media (max-width: 992px) {
+            .mirror-section { padding-top: 60px; }
+            .mirror-track { gap:18px; padding:16px 14px 24px; scroll-padding-inline:14px; }
+            .mirror-frame { flex-basis:min(78vw, 300px); width:min(78vw, 300px); height:min(112vw, 420px); }
+            .logo-nav { font-size:.92rem; letter-spacing:2px; gap:8px; }
+            .logo-nav img { width:34px; height:34px; }
+
+            .nav-links { display: none; }
+            .reviews-section { padding: 75px 5%; }
+            .reviews-shell { padding: 20px 12px 25px; }
+            .map-grid { grid-template-columns: 1fr; text-align: center; }
+            .map-canvas { height: 300px; }
+        }
+
+        @media (max-width: 600px) {
+            nav { padding:.75rem 4%; }
+            .logo-nav { font-size:.76rem; letter-spacing:1.5px; }
+            .logo-nav img { width:27px; height:27px; }
+            .mirror-track { gap:14px; padding:12px 12px 20px; }
+            .mirror-frame { flex-basis:82vw; width:82vw; height:112vw; max-height:390px; border-width:6px; }
+            .mirror-label { padding:12px 8px; font-size:.9rem; }
+        }
+    @media (max-width:420px){.hero-brand img{width:min(300px,62vw);height:min(300px,62vw)}.footer-brand img{width:min(200px,48vw);height:min(200px,48vw)}.footer-brand{flex-wrap:wrap}}
+
+        @media (max-width: 600px) {
+            .hero-kicker { padding-top: 44px !important; }
+            .hero-copy { width: 90vw; font-size: 1.25rem !important; }
+            .footer-brand { gap: 14px; align-items: center; }
+            .footer-brand img { width: min(200px, 42vw); height: min(200px, 42vw); }
+            .footer-logo { font-size: 1.45rem; letter-spacing: 2px; }
+            .footer-faq a { font-size: .58rem; letter-spacing: 1.4px; }
+            .copy { font-size: .52rem; letter-spacing: 1px; }
+        }
+
+    </style>
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BeautySalon","name":"Celia Figueredo","url":"https://www.celiafigueredo.com/","telephone":"+54 9 11 6580-4616","address":{"@type":"PostalAddress","streetAddress":"Av. Santa Fe 2450, Local 47, 1.er piso","addressLocality":"Buenos Aires","addressRegion":"CABA","addressCountry":"AR"},"sameAs":["https://www.instagram.com/studio_celia_figueredo/"]}
+    </script>
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <meta property="og:image" content="imagenes/headL.webp">
+    <meta name="twitter:image" content="imagenes/headL.webp">
+</head>
+<body>
+
+    <nav>
+        <a href="#inicio" class="logo-nav serif"><img src="imagenes/Logo.webp" alt="Logo Celia Figueredo"><span>CELIA FIGUEREDO</span></a>
+        <div class="nav-links">
+            <a href="#inicio" class="nav-item">Inicio</a>
+            <a href="#estilos" class="nav-item">Estilos</a>
+            <a href="#servicios" class="nav-item">Servicios</a>
+            <a href="#opiniones" class="nav-item">Opiniones</a>
+            <a href="#ubicacion" class="nav-item">Ubicación</a>
+            <a class='nav-item' href='/preguntas'>Preguntas</a>
+            <a href="https://wa.me/5491165804616?text=Hola!%20Vengo%20de%20la%20web%20de%20Celia%20Figueredo%20y%20quiero%20reservar%20un%20turno." class="btn-wa-nav">RESERVAR</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div data-aos="fade-up" data-aos-duration="1500">
+            <p class="hero-kicker">ESTUDIO EXCLUSIVO • DESDE 2016</p>
+            <h1 class="hero-brand"><img src="imagenes/Logo.webp" alt="Logo Celia Figueredo"><span>CELIA FIGUEREDO</span></h1>
+            <p class="hero-copy">Un espacio donde la precisión, la experiencia y el cuidado se encuentran para crear una versión de vos que te represente.</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://wa.me/5491165804616?text=Hola!%20Vengo%20de%20la%20web%20y%20quiero%20un%20turno." class="btn-wa-nav" style="padding: 18px 35px; font-size: 0.8rem;">CONSULTAR POR WHATSAPP</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESPEJOS CARRUSEL -->
+    <section id="estilos" class="mirror-section">
+        <div class="category-header"><h2>Galería de Estilos</h2></div>
+        <div class="mirror-track">
+            <div class="mirror-frame"><img src="imagenes/balayage-auto.webp" loading="lazy"><div class="mirror-label">Balayage de Autor</div></div>
+            <div class="mirror-frame"><img src="imagenes/corte-visagismo.webp" alt="Corte unisex" loading="lazy"><div class="mirror-label">Corte &amp; Visagismo</div></div>
+            <div class="mirror-frame"><img src="imagenes/brushing-autor.webp" alt="Brushing profesional" loading="lazy"><div class="mirror-label">Brushing de Autor</div></div>
+            <div class="mirror-frame"><img src="imagenes/peinados-fiesta.webp" alt="Peinado de fiesta" loading="lazy"><div class="mirror-label">Peinados de Fiesta</div></div>
+            <div class="mirror-frame"><img src="imagenes/puntos-de-luz.webp" alt="Reflejos y dimensión" loading="lazy"><div class="mirror-label">Puntos de Luz</div></div>
+            <div class="mirror-frame"><img src="imagenes/brillo-control.webp" alt="Cabello liso y brillante" loading="lazy"><div class="mirror-label">Brillo &amp; Control</div></div>
+            <div class="mirror-frame"><img src="imagenes/coloracion-global-hombre.webp" alt="Coloración global" loading="lazy"><div class="mirror-label">Coloración Global</div></div>
+            <div class="mirror-frame"><img src="imagenes/tratamientos.webp" alt="Tratamiento de brillo" loading="lazy"><div class="mirror-label">Tratamientos</div></div>
+            <div class="mirror-frame"><img src="imagenes/balayage-autor.webp" alt="Balayage de autor" loading="lazy"><div class="mirror-label">Balayage de Autor</div></div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="services-section">
+        <div class="category-header" data-aos="fade-up"><h2>DISEÑO &amp; ESTILO</h2></div>
+        <div class="services-grid">
+            <article class="service-card"><div class="service-media"><img src="imagenes/Corte Unisex.webp" alt="Corte Unisex profesional en salón" loading="lazy"></div><div class="service-copy"><h4>Corte Unisex</h4><span class="tagline">Diseño y Visagismo Personalizado</span><p>Una estructura pensada para acompañar el rostro, la textura y la caída natural del cabello.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/brushing-autor.webp" alt="Brushing profesional con volumen y ondas" loading="lazy"></div><div class="service-copy"><h4>Brushing</h4><span class="tagline">Modelado y Pulido de Alta Gama</span><p>Movimiento, volumen y brillo con un acabado pulido y sofisticado.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/peinados-fiesta.webp" alt="Peinado de fiesta y recogido elegante" loading="lazy"></div><div class="service-copy"><h4>Peinados de Fiesta</h4><span class="tagline">Alta Costura Capilar</span><p>Recogidos y estilismos de ocasión diseñados para acompañar tu look completo.</p></div></article>
+        </div>
+
+        <div class="category-header" data-aos="fade-up"><h2>COLORACIÓN DE AUTOR</h2></div>
+        <div class="services-grid">
+            <article class="service-card"><div class="service-media"><img src="imagenes/coloracion-global-hombre.webp" alt="Coloración global y cabello brillante" loading="lazy"></div><div class="service-copy"><h4>Coloración Global</h4><span class="tagline">Inmersión de Pigmento y Brillo Infinito</span><p>Un tono integral, profundo y luminoso, elegido para crear una identidad de color coherente.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/balayage-auto.webp" alt="Balayage de autor con iluminación natural" loading="lazy"></div><div class="service-copy"><h4>Balayage</h4><span class="tagline">Degradé de Autor teñido por el Sol</span><p>Una transición orgánica de luz y profundidad para un resultado integrado y elegante.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/puntos-de-luz.webp" alt="Reflejos y puntos de luz estratégicos" loading="lazy"></div><div class="service-copy"><h4>Reflejos</h4><span class="tagline">Puntos de Luz Estratégicos</span><p>Dimensión y luminosidad colocadas con precisión para realzar el rostro y el movimiento.</p></div></article>
+        </div>
+
+        <div class="category-header" data-aos="fade-up"><h2>TRATAMIENTOS AVANZADOS</h2></div>
+        <div class="services-grid">
+            <article class="service-card"><div class="service-media"><img src="imagenes/brillo-control.webp" alt="Cabello liso y brillante después de tratamiento" loading="lazy"></div><div class="service-copy"><h4>Alisado Láser</h4><span class="tagline">Tecnología Fotónica Nanoterapia</span><p>Un acabado ultra pulido y uniforme, con foco en brillo, control y una apariencia espejada.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/celulas-madre.webp" alt="Tratamiento capilar profesional aplicado en salón" loading="lazy"></div><div class="service-copy"><h4>Células Madre</h4><span class="tagline">Biotecnología Regenerativa</span><p>Un tratamiento de cuidado intensivo presentado como una experiencia de recuperación y nutrición de la fibra.</p></div></article>
+            <article class="service-card"><div class="service-media"><img src="imagenes/tratamientos.webp" alt="Cabello ultra brillante y pulido" loading="lazy"></div><div class="service-copy"><h4>Botox Capilar</h4><span class="tagline">Relleno e Hidratación</span><p>Una propuesta enfocada en suavidad, brillo, elasticidad y una textura visualmente más uniforme.</p></div></article>
+        </div>
+    </section>
+
+    <section class="questions-strip">
+        <h2>¿TENÉS DUDAS ANTES DE ELEGIR?</h2>
+        <p>Encontrá respuestas sobre servicios, color, tratamientos, reservas y tu visita al atelier.</p>
+        <a href='/preguntas'>VER PREGUNTAS FRECUENTES</a>
+    </section>
+
+
+    <!-- GOOGLE REVIEWS -->
+    <section id="opiniones" class="reviews-section">
+        <div class="category-header" data-aos="fade-up">
+            <p class="section-kicker">LA EXPERIENCIA DE QUIENES YA NOS ELIGIERON</p>
+            <h2>OPINIONES DE GOOGLE</h2>
+            <p class="section-intro">Experiencias reales de clientas y clientes que visitaron Celia Figueredo.</p>
+        </div>
+        <div class="reviews-shell" data-aos="fade-up" data-aos-delay="100">
+            <div class="reviews-heading">
+                <span class="reviews-stars">★★★★★</span>
+                <span class="reviews-label">RESEÑAS VERIFICADAS EN GOOGLE</span>
+            </div>
+            <div class="elfsight-app-c80e295e-eb83-4395-aea1-86d0627f4b73" data-elfsight-app-lazy></div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN Y MAPA -->
+    <section id="ubicacion" class="map-section">
+        <div class="map-grid">
+            <div class="map-info" data-aos="fade-right">
+                <h2>VISÍTANOS EN RECOLETA</h2>
+                <p>Av. Santa Fe 2450, Local 47, 1.er piso.<br>Galería Americana • Esquina Av. Pueyrredón.<br>Ciudad Autónoma de Buenos Aires.</p>
+                <a href="https://maps.app.goo.gl/z59Wu79Yz3fs1Sae8" target="_blank" class="btn-wa-nav" style="padding: 15px 30px;">ABRIR EN GOOGLE MAPS</a>
+            </div>
+            <div class="map-canvas" data-aos="fade-left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4533157529124!2d-58.4031649!3d-34.5952136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca90e3802361%3A0xe2128711e2f4700d!2sStudio%20Celia%20Figueredo!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-brand">
+            <img src="imagenes/Logo.webp" alt="Logo Celia Figueredo">
+            <div class="footer-brand-copy">
+                <a href="#" class="footer-logo serif">CELIA FIGUEREDO</a>
+                <div class="footer-faq"><a href='/preguntas'>PREGUNTAS FRECUENTES</a></div>
+                <p class="copy">© 2026 CELIA FIGUEREDO ATELIER • EXCLUSIVIDAD EN DISEÑO CAPILAR</p>
+            </div>
+        </div>
+                <div class="footer-socials">
+            <a href="https://www.instagram.com/studio_celia_figueredo/"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5491165804616"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="copy">© 2026 CELIA FIGUEREDO ATELIER • EXCLUSIVIDAD EN DISEÑO CAPILAR</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: false, mirror: true });
+
+        // Cada servicio abre WhatsApp con el nombre del servicio ya incluido en el mensaje.
+        // Carrusel infinito: movimiento continuo, suave y real de derecha a izquierda.
+        (() => {
+            const track = document.querySelector('.mirror-track');
+            if (!track) return;
+
+            if (!track.dataset.infiniteReady) {
+                const originals = Array.from(track.children);
+                originals.forEach(card => track.appendChild(card.cloneNode(true)));
+                track.dataset.infiniteReady = 'true';
+            }
+
+            let paused = false;
+            let dragging = false;
+            let pointerId = null;
+            let lastX = 0;
+            let lastTime = performance.now();
+            let resumeTimer = null;
+            const speed = 0.55; // px por frame aprox.
+
+            const loopPoint = () => Math.max(1, track.scrollWidth / 2);
+            const normalize = () => {
+                const half = loopPoint();
+                if (track.scrollLeft >= half) track.scrollLeft -= half;
+                if (track.scrollLeft < 0) track.scrollLeft += half;
+            };
+
+            const tick = now => {
+                const dt = Math.min(now - lastTime, 40);
+                lastTime = now;
+                if (!paused && !dragging && !document.hidden) {
+                    track.scrollLeft += speed * (dt / 16.6667);
+                    normalize();
+                }
+                requestAnimationFrame(tick);
+            };
+
+            const pause = () => {
+                paused = true;
+                clearTimeout(resumeTimer);
+            };
+            const resume = () => {
+                clearTimeout(resumeTimer);
+                resumeTimer = setTimeout(() => {
+                    if (!dragging) {
+                        paused = false;
+                        lastTime = performance.now();
+                    }
+                }, 120);
+            };
+
+            const down = e => {
+                dragging = true;
+                pause();
+                pointerId = e.pointerId;
+                lastX = e.clientX;
+                track.classList.add('is-dragging');
+                track.setPointerCapture?.(e.pointerId);
+            };
+            const move = e => {
+                if (!dragging || e.pointerId !== pointerId) return;
+                const dx = e.clientX - lastX;
+                track.scrollLeft -= dx;
+                normalize();
+                lastX = e.clientX;
+            };
+            const up = e => {
+                if (!dragging) return;
+                dragging = false;
+                pointerId = null;
+                track.classList.remove('is-dragging');
+                try { track.releasePointerCapture?.(e.pointerId); } catch (_) {}
+                resume();
+            };
+
+            // Se pausa SOLO al tocar/arrastrar; pasar el mouse por encima no lo detiene.
+            track.addEventListener('pointerdown', down);
+            track.addEventListener('pointermove', move);
+            track.addEventListener('pointerup', up);
+            track.addEventListener('pointercancel', up);
+            track.addEventListener('touchstart', pause, {passive:true});
+            track.addEventListener('touchend', resume, {passive:true});
+            track.addEventListener('touchcancel', resume, {passive:true});
+            track.addEventListener('dragstart', e => e.preventDefault());
+            document.addEventListener('visibilitychange', () => { lastTime = performance.now(); });
+
+            requestAnimationFrame(tick);
+        })();
+
+        // Revelado al entrar en pantalla. Se repite al bajar y volver a subir.
+        (() => {
+            const targets = document.querySelectorAll(
+                '.category-header, .mirror-frame, .service-card, .questions-strip, .reviews-shell, .map-info, .map-canvas, footer, .hero > div'
+            );
+            targets.forEach(el => el.classList.add('scroll-reveal'));
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('is-visible');
+                    else entry.target.classList.remove('is-visible');
+                });
+            }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
+
+            targets.forEach(el => observer.observe(el));
+        })();
+
+        document.querySelectorAll(".service-card").forEach((card) => {
+            const title = card.querySelector("h4");
+            if (!title) return;
+            const service = title.textContent.trim();
+            card.setAttribute("role", "link");
+            card.setAttribute("tabindex", "0");
+            card.setAttribute("aria-label", `Reservar turno para ${service}`);
+
+            const openWhatsApp = () => {
+                const message = `Hola! Vengo de la web de Celia Figueredo y quiero reservar un turno para ${service}.`;
+                window.open(`https://wa.me/5491165804616?text=${encodeURIComponent(message)}`, "_blank");
+            };
+
+            card.addEventListener("click", openWhatsApp);
+            card.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    openWhatsApp();
+                }
+            });
+        });
+    
+    </script>
+</body>
+</html><script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="792806e1-db49-4103-bea2-c7f877d211de" data-app-host="app.netlify.com"></script>

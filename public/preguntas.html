@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas frecuentes | Celia Figueredo | Recoleta</title>
+    <meta name="description" content="Preguntas frecuentes de Celia Figueredo sobre corte, brushing, color, balayage, reflejos, tratamientos, reservas y ubicación en Recoleta.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://www.celiafigueredo.com/preguntas.html">
+    <meta name="theme-color" content="#050505">
+    
+    <!-- Open Graph (SEO) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Preguntas Frecuentes | Celia Figueredo">
+    <meta property="og:description" content="Guía de servicios, color y reservas en nuestro atelier de Recoleta.">
+    <meta property="og:locale" content="es_AR">
+
+    <!-- Fuentes e Iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --deep-black: #050505;
+            --gold: #D4AF37;
+            --ferrari-red: #D6001C;
+            --ivory: #F5F5F0;
+            --text-muted: #a0a0a0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--deep-black);
+            color: var(--ivory);
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, .serif { 
+            font-family: 'Cormorant Garamond', serif; 
+            font-weight: 300; 
+            text-transform: uppercase; 
+            letter-spacing: 4px; 
+        }
+
+        /* --- NAVEGACIÓN (IDÉNTICA A INDEX) --- */
+        nav {
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(5, 5, 5, 0.95);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-nav { color: var(--gold); text-decoration: none; font-size: 1.12rem; letter-spacing: 3px; white-space: nowrap; }
+        .nav-links { display: flex; gap: 17px; align-items: center; flex-wrap: nowrap; }
+        .nav-item { color: white; text-decoration: none; font-size: 0.62rem; letter-spacing: 1.4px; white-space: nowrap; text-transform: uppercase; transition: 0.3s; }
+        .nav-item:hover { color: var(--gold); }
+        .btn-wa-nav { background: var(--gold); color: black; padding: 8px 14px; font-size: 0.62rem; letter-spacing: 1.2px; white-space: nowrap; font-weight: 600; text-decoration: none; transition: 0.3s; }
+        .btn-wa-nav:hover { background: #f1d592; }
+
+        /* --- HERO PREGUNTAS --- */
+        .hero-preguntas {
+            padding: 160px 7% 80px;
+            text-align: center;
+            background: radial-gradient(circle at 50% 15%,rgba(212,175,55,.1),transparent 45%);
+        }
+        .eyebrow { color: var(--gold); font-size: .65rem; letter-spacing: 4px; margin-bottom: 15px; text-transform: uppercase; }
+        .hero-preguntas h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); color: var(--gold); margin-bottom: 15px; }
+        .hero-preguntas p { max-width: 780px; margin: auto; color: #aaa; font-weight: 300; }
+
+        /* --- CONTENIDO FAQ --- */
+        .wrap { max-width: 1050px; margin: auto; padding: 0 7% 90px; }
+        .group { margin-top: 65px; }
+        .group h2 { font-size: 2.1rem; color: var(--gold); margin-bottom: 22px; }
+        
+        details { border-top: 1px solid #202020; transition: all 0.3s ease; }
+        details:last-child { border-bottom: 1px solid #202020; }
+        summary { cursor: pointer; list-style: none; padding: 22px 4px; color: #eee; font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; letter-spacing: 1px; }
+        summary::-webkit-details-marker { display: none; }
+        summary:after { content: '+'; float: right; color: var(--gold); font-family: Montserrat; font-size: .95rem; }
+        details[open] summary:after { content: '−'; }
+        details p { padding: 0 40px 25px 4px; color: #999; font-size: .9rem; font-weight: 300; }
+
+        .callout {
+            margin-top: 75px;
+            padding: 45px;
+            text-align: center;
+            border: 1px solid rgba(212,175,55,.22);
+            background: #090909;
+        }
+        .callout h2 { color: var(--gold); font-size: 2.3rem; margin-bottom: 10px; }
+        .callout p { color: #999; max-width: 700px; margin: 0 auto 24px; }
+
+        /* --- MAPA --- */
+        .map-section { padding: 100px 8%; background: #080808; }
+        .map-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .map-info h2 { font-size: 2.5rem; color: var(--gold); margin-bottom: 20px; }
+        .map-info p { font-size: 1.1rem; margin-bottom: 30px; font-weight: 200; }
+        .map-canvas { height: 450px; border: 1px solid #222; }
+
+        /* --- FOOTER --- */
+        footer { padding: 60px 8% 30px; border-top: 1px solid #111; text-align: center; background: var(--deep-black); }
+        .footer-logo { font-size: 2rem; color: var(--gold); margin-bottom: 20px; display: block; text-decoration: none; }
+        .footer-socials { margin-bottom: 30px; }
+        .footer-socials a { color: white; margin: 0 15px; font-size: 1.2rem; transition: 0.3s; }
+        .footer-socials a:hover { color: var(--gold); }
+        .copy { font-size: 0.65rem; color: #444; letter-spacing: 2px; }
+
+        @media (max-width: 992px) {
+            .nav-links { display: none; }
+            .map-grid { grid-template-columns: 1fr; text-align: center; }
+            .map-canvas { height: 300px; }
+            .hero-preguntas { padding-top: 120px; }
+        }
+
+        /* Botón flotante WhatsApp */
+        .btn-wa-flotante {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 99999;
+            background: #25D366;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 25px rgba(37, 211, 102, 0.5);
+            transition: transform 0.3s, background 0.3s;
+            text-decoration: none;
+        }
+        .btn-wa-flotante:hover {
+            transform: scale(1.1);
+            background: #20ba59;
+        }
+
+        /* Ocultar barra/drawer de Netlify */
+        netlify-drawer, #netlify-drawer, [data-netlify-drawer], div[data-netlify-drawer], iframe[id*="netlify"], iframe[src*="netlify"], .netlify-drawer, .netlify-feedback-badge, #netlify-collaborative-tools {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            z-index: -99999 !important;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"¿Tengo que saber exactamente qué quiero antes de reservar?","acceptedAnswer":{"@type":"Answer","text":"No. Podés llegar con una idea, una referencia o ganas de cambiar. La conversación previa ayuda a definir qué servicio tiene más sentido."}},
+    {"@type":"Question","name":"¿Puedo llevar una foto de referencia?","acceptedAnswer":{"@type":"Answer","text":"Sí. Una foto ayuda a comunicar una intención, aunque el resultado debe adaptarse a tu cabello real."}},
+    {"@type":"Question","name":"¿Qué diferencia hay entre balayage, reflejos y coloración global?","acceptedAnswer":{"@type":"Answer","text":"El balayage busca una iluminación integrada; los reflejos trabajan puntos de luz más definidos; la coloración global modifica el tono general."}},
+    {"@type":"Question","name":"¿Cómo reservo un turno?","acceptedAnswer":{"@type":"Answer","text":"La reserva se coordina por WhatsApp desde los botones principales de la web."}},
+    {"@type":"Question","name":"¿Dónde está Celia Figueredo?","acceptedAnswer":{"@type":"Answer","text":"Av. Santa Fe 2450, Local 47, 1.er piso, Galería Americana, Recoleta, Ciudad Autónoma de Buenos Aires."}}
+    ]}</script>
+</head>
+<body>
+
+    <nav>
+        <a href="/" class="logo-nav serif">CELIA FIGUEREDO</a>
+        <div class="nav-links">
+            <a href="/#inicio" class="nav-item">Inicio</a>
+            <a href="/#estilos" class="nav-item">Estilos</a>
+            <a href="/#servicios" class="nav-item">Servicios</a>
+            <a href="/#opiniones" class="nav-item">Opiniones</a>
+            <a href="#ubicacion" class="nav-item">Ubicación</a>
+            <a href="/preguntas.html" class="nav-item" style="color:var(--gold);">Preguntas</a>
+            <a href="/#reservar" class="btn-wa-nav">TURNO ONLINE</a>
+        </div>
+    </nav>
+
+    <header class="hero-preguntas" data-aos="fade-up">
+        <div class="eyebrow">Información antes de tu visita</div>
+        <h1>PREGUNTAS</h1>
+        <p>Una guía para conocer el enfoque del atelier, elegir un servicio y resolver dudas antes de reservar.</p>
+    </header>
+
+    <main class="wrap">
+        <!-- SECCIÓN 1 CON EFECTO DE SUBIDA -->
+        <section class="group" data-aos="fade-up" data-aos-duration="1200">
+            <h2>La experiencia</h2>
+            <details>
+                <summary>¿Qué hace diferente la propuesta de Celia Figueredo?</summary>
+                <p>La propuesta parte del diseño personalizado: entender qué buscás, observar las características de tu cabello y definir una técnica y un acabado coherentes con tu estilo.</p>
+            </details>
+            <details>
+                <summary>¿Tengo que saber exactamente qué quiero antes de reservar?</summary>
+                <p>No. Podés llegar con una idea, una referencia o simplemente con ganas de cambiar.</p>
+            </details>
+            <details>
+                <summary>¿Puedo llevar una foto de referencia?</summary>
+                <p>Sí. Una foto ayuda a explicar el efecto que buscás, aunque el resultado debe adaptarse a tu cabello real.</p>
+            </details>
+        </section>
+
+        <!-- SECCIÓN 2 CON EFECTO DE SUBIDA -->
+        <section class="group" data-aos="fade-up" data-aos-duration="1200">
+            <h2>Color & iluminación</h2>
+            <details>
+                <summary>¿Qué diferencia hay entre balayage, reflejos y coloración global?</summary>
+                <p>El balayage busca una iluminación integrada y gradual; los reflejos permiten puntos de luz más definidos; la coloración global modifica el tono general.</p>
+            </details>
+            <details>
+                <summary>¿Puedo pasar de un color oscuro a uno mucho más claro?</summary>
+                <p>Puede ser posible, pero el historial y el estado del cabello son determinantes y no todos los cambios se realizan en una sola sesión.</p>
+            </details>
+            <details>
+                <summary>¿Qué información debo contar antes de un servicio de color?</summary>
+                <p>Conviene informar tinturas, decoloraciones, alisados, permanentes y tratamientos químicos recientes.</p>
+            </details>
+        </section>
+
+        <!-- SECCIÓN 3 CON EFECTO DE SUBIDA -->
+        <section class="group" data-aos="fade-up" data-aos-duration="1200">
+            <h2>Servicios & cuidado</h2>
+            <details>
+                <summary>¿Qué servicios realizan?</summary>
+                <p>Corte Unisex, Brushing, Peinados de Fiesta, Coloración Global, Balayage, Reflejos, Alisado Láser, Células Madre y Botox Capilar.</p>
+            </details>
+            <details>
+                <summary>¿Qué pasa si mi cabello está sensibilizado?</summary>
+                <p>Es importante informarlo antes del servicio porque el estado de la fibra puede modificar qué procesos son convenientes.</p>
+            </details>
+            <details>
+                <summary>¿Me pueden orientar sobre el mantenimiento?</summary>
+                <p>Sí. Después del servicio podés consultar qué cuidados convienen para conservar el acabado y la condición del cabello.</p>
+            </details>
+        </section>
+
+        <!-- SECCIÓN 4 CON EFECTO DE SUBIDA -->
+        <section class="group" data-aos="fade-up" data-aos-duration="1200">
+            <h2>Turnos & visita</h2>
+            <details>
+                <summary>¿Cómo reservo?</summary>
+                <p>La reserva se coordina directamente por WhatsApp o a través del sistema de turnos online de la web.</p>
+            </details>
+            <details>
+                <summary>¿Dónde está Celia Figueredo?</summary>
+                <p>Av. Santa Fe 2450, Local 47, 1.er piso, Galería Americana, esquina Av. Pueyrredón, Recoleta, Ciudad Autónoma de Buenos Aires.</p>
+            </details>
+            <details>
+                <summary>¿Cómo llego?</summary>
+                <p>En la página principal podés abrir la ubicación directamente en Google Maps con las indicaciones para ingresar por Av. Pueyrredón 1357 o Av. Santa Fe 2450.</p>
+            </details>
+        </section>
+
+        <!-- CALLOUT CON EFECTO -->
+        <div class="callout" data-aos="fade-up">
+            <h2>¿Todavía tenés una duda?</h2>
+            <p>Si tu consulta es específica para tu cabello o para el servicio que querés realizarte, podés hablar directamente con el atelier.</p>
+            <a class="btn-wa-nav" style="padding: 15px 30px; display: inline-block;" href="https://wa.me/5491165804616?text=Hola%20me%20gustaria%20pedir%20un%20Turno%20para%20...">CONSULTAR POR WHATSAPP</a>
+        </div>
+    </main>
+
+    <!-- UBICACIÓN Y MAPA -->
+    <section id="ubicacion" class="map-section">
+        <div class="map-grid">
+            <div class="map-info" data-aos="fade-right">
+                <h2>VISÍTANOS EN RECOLETA</h2>
+                <p>Av. Santa Fe 2450, Local 47, 1.er piso.<br>Galería Americana • Esquina Av. Pueyrredón.<br>Ciudad Autónoma de Buenos Aires.</p>
+                <a href="https://maps.app.goo.gl/3xnF5ZwrPzLt5A8Q6" target="_blank" class="btn-wa-nav" style="padding: 15px 30px; display: inline-block;">ABRIR EN GOOGLE MAPS</a>
+            </div>
+            <div class="map-canvas" data-aos="fade-left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4533157529124!2d-58.4031649!3d-34.5952136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca90e3802361%3A0xe2128711e2f4700d!2sStudio%20Celia%20Figueredo!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="/" class="footer-logo serif">CELIA FIGUEREDO</a>
+        <div style="margin-bottom:22px;"><a href="/preguntas.html" style="color:var(--gold);text-decoration:none;font-size:.68rem;letter-spacing:2px;">PREGUNTAS FRECUENTES</a></div>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/studioceliabelleza/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5491165804616?text=Hola%20me%20gustaria%20pedir%20un%20Turno%20para%20..." target="_blank" title="Pedir un Turno por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="copy">© 2026 CELIA FIGUEREDO ATELIER • EXCLUSIVIDAD EN DISEÑO CAPILAR</p>
+        <p style="margin-top: 10px; font-size: 0.75rem; color: #facc15; text-decoration: none;">
+            creada por <strong style="color: #facc15;">Soul Grafic Desing</strong>
+            <a href="https://wa.me/5491176423742?text=hola%20megustaria%20tener%20mi%20propio%20proyecto%20de.." target="_blank" rel="noopener noreferrer" style="color: #facc15; text-decoration: none; margin-left: 4px;">click para hablar de tu proyecto.</a>
+        </p>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/5491165804616?text=Hola%20me%20gustaria%20pedir%20un%20Turno%20para%20..." target="_blank" rel="noopener noreferrer" title="Pedir un Turno por WhatsApp" aria-label="Pedir un Turno por WhatsApp" class="btn-wa-flotante">
+        <svg viewBox="0 0 24 24" fill="#ffffff" width="30" height="30">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

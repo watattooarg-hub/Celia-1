@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --black-deep: #050505;
+    --black-matte: #0a0a0a;
+    --black-card: #121212;
+    --gold: #D4AF37;
+    --gold-light: #f1d592;
+    --gold-dark: #997819;
+    --lamborghini-red: #D6001C;
+    --text-gray: #a0a0a0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--black-deep);
+    color: #e5e5e5;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-cursive {
+    font-family: 'Alex Brush', cursive;
+  }
+
+  /* Custom luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2415;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+  }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f7e7b4 0%, #D4AF37 50%, #aa8421 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.red-button-glow:hover {
+  box-shadow: 0 0 25px rgba(214, 0, 28, 0.45);
+}
+
+/* Ocultar barra/drawer de Netlify (feedback toolbar que tapa el botón de WhatsApp) */
+netlify-drawer,
+#netlify-drawer,
+[data-netlify-drawer],
+div[data-netlify-drawer],
+iframe[id*="netlify"],
+iframe[src*="netlify"],
+.netlify-drawer,
+.netlify-feedback-badge,
+#netlify-collaborative-tools,
+div[class*="netlify-drawer"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  z-index: -99999 !important;
+  width: 0 !important;
+  height: 0 !important;
+  transform: translateY(2000px) !important;
+}
+
